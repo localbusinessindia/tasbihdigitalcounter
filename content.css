@@ -25,3 +25,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 @media(max-width:1099px){main.site-main{display:block;max-width:640px}.ad-rail{display:none}}
 @media(max-width:680px){header.has-nav{display:flex;flex-direction:column;align-items:stretch;gap:6px;padding-top:12px;padding-bottom:8px}header.has-nav .logo{align-self:flex-start;font-size:.98rem}header.has-nav nav{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;gap:16px;padding:3px 0 7px;scrollbar-width:none;-webkit-overflow-scrolling:touch}header.has-nav nav::-webkit-scrollbar{display:none}header.has-nav nav a{flex:0 0 auto;white-space:nowrap}header:not(.has-nav){padding-top:12px;padding-bottom:8px}.main-content{max-width:100%}h1{font-size:1.55rem}h2{margin-top:23px}}
 @media print{body{background:#fff!important;color:#000!important;font-size:11pt}header,footer,.related,.print-action,.btn,.ad-rail{display:none!important}main.site-main{display:block;max-width:none;width:100%}.main-content{max-width:none}.card,.callout{background:#fff!important;border:0;padding:0;margin:8px 0}h1,h2{break-after:avoid}table{min-width:0!important;width:100%}tr{break-inside:avoid}th,td{padding:5px;border-color:#bbb}}
+
+/* Calm visual polish shared by the guide pages. */
+.main-content>h1{animation:guideFade .45s ease both}
+.main-content>.card,.main-content>.box,.main-content>.callout{transition:transform .2s ease,box-shadow .2s ease}
+.main-content>.card:hover,.main-content>.box:hover,.main-content>.callout:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,81,50,.07)}
+.main-content h2{scroll-margin-top:16px}
+.content-section{animation:guideFade .5s ease both}
+.related a{transition:transform .18s ease,background-color .18s ease}
+.related a:hover{transform:translateY(-2px)}
+@keyframes guideFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

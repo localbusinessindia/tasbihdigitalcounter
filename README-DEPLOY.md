@@ -31,3 +31,10 @@ This build uses a low-KD-first strategy without removing harder terms: KD 0–14
 
 ## Future sidebar ad placements
 The desktop rails are marked with `data-ad-placement="left"` and `data-ad-placement="right"` in the HTML. Add responsive AdSense code inside those `<aside>` elements only after the site is approved and you have the correct ad-unit code. Remove `aria-hidden="true"` from a rail when placing an ad in it so assistive technology can access the ad.
+
+
+## Version 6 update
+- Added gentle counter, button, card and guide-page animations, with reduced-motion support.
+- Improved vibration capability detection and test feedback. Web vibration is not supported by every browser; notably, iOS Safari generally does not expose the Vibration API. Use a supported Android browser or the sound option where vibration is unavailable.
+- Expanded the homepage and key dhikr guides with relevant explanations, spelling variants, usage context and FAQs, avoiding keyword stuffing.
+- Service-worker cache name updated to v6.
