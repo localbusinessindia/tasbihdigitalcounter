@@ -38,3 +38,11 @@ The desktop rails are marked with `data-ad-placement="left"` and `data-ad-placem
 - Improved vibration capability detection and test feedback. Web vibration is not supported by every browser; notably, iOS Safari generally does not expose the Vibration API. Use a supported Android browser or the sound option where vibration is unavailable.
 - Expanded the homepage and key dhikr guides with relevant explanations, spelling variants, usage context and FAQs, avoiding keyword stuffing.
 - Service-worker cache name updated to v6.
+
+
+## Version 7 — vibration fix
+- Added the missing `#deviceNote` status element used by the counter script.
+- Made vibration status rendering null-safe and kept the button state synchronized with its accessibility state.
+- The vibration toggle now requests a short test pulse directly inside the user's tap handler; turning vibration off also attempts to cancel an active pattern.
+- Updated the service-worker cache name to v7 so deployed browsers can fetch the corrected files.
+- Vibration still depends on Android device/browser support and system settings; the web page cannot force a phone motor to run if Chrome or the device blocks the Vibration API.

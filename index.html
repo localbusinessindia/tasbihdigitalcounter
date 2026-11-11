@@ -33,6 +33,7 @@ h2{font-size:1.2rem;line-height:1.3;margin:28px 0 8px}
 select,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;touch-action:manipulation}
 select{width:100%;margin-bottom:12px}button{cursor:pointer}button[aria-pressed=true],.on{background:var(--pressed-bg);color:#fff;border-color:var(--pressed-bg)}
 .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
+.device-note{min-height:1.5em;margin:4px 0 12px;text-align:center;color:var(--mu);font-size:.88rem}
 #ar{font-size:1.9rem;text-align:center;direction:rtl;line-height:1.7;font-family:"Amiri","Traditional Arabic",serif}
 #tr{text-align:center;font-weight:600}#mn{text-align:center;color:var(--mu);font-size:.9rem;min-height:1.4em}
 .ringw{position:relative;width:min(260px,70vw);aspect-ratio:1;margin:12px auto}
@@ -93,7 +94,8 @@ button:disabled{opacity:.55;cursor:not-allowed}
 <div aria-live="polite" id="msg" role="status"></div>
 <div class="row" id="goals"><button data-g="33">33</button><button data-g="66">66</button><button data-g="99">99</button><button data-g="100">100</button><button data-g="0">∞</button><button id="cg">Custom</button></div>
 <div class="row"><button id="minus">Undo −1</button><button id="reset">Reset</button><button aria-pressed="false" id="sun">After Salah 33-33-34</button><button aria-pressed="false" id="sleep">Bedtime 34-33-33</button><button id="add">+ Custom dhikr</button></div>
-<div class="row"><button aria-pressed="true" id="vib">Vibrate</button><button aria-pressed="false" id="snd">Sound</button><button aria-pressed="false" id="wake">Keep screen on</button></div>
+<div class="row"><button aria-pressed="true" id="vib" type="button">Vibration: On</button><button aria-pressed="false" id="snd" type="button">Sound</button><button aria-pressed="false" id="wake" type="button">Keep screen on</button></div>
+<p class="device-note" id="deviceNote" aria-live="polite" role="status">Tap “Vibration: On” to send a short test vibration.</p>
 <div class="stats"><div><b id="st">0</b><span>Today</span></div><div><b id="sl">0</b><span>Total</span></div><div><b id="ss">0</b><span>Day streak</span></div></div>
 <div class="row"><button id="exp">Export backup</button><label><button onclick="this.nextElementSibling.click()">Import backup</button><input accept=".json" hidden="" id="imp" type="file"/></label></div>
 </section>
@@ -150,7 +152,7 @@ let ac,lock;
 function beep(){try{ac=ac||new AudioContext();const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=880;g.gain.value=.08;o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+.04)}catch(e){}}
 const vibrationSupported=typeof navigator!=='undefined'&&typeof navigator.vibrate==='function';
 function vib(p){if(S.vib&&vibrationSupported){try{navigator.vibrate(p)}catch(e){}}}
-function showDeviceNote(){const note=$('#deviceNote'),btn=$('#vib');if(!vibrationSupported){S.vib=0;btn.disabled=true;btn.textContent='Vibration unavailable';btn.setAttribute('aria-pressed','false');note.textContent='Your current browser or device does not support web vibration. Try the Sound option, or open this site in a supported Android browser.'}else{btn.disabled=false;btn.textContent='Vibration: '+(S.vib?'On':'Off');note.textContent='Vibration works only on supported devices and browsers.'}}
+function showDeviceNote(message){const note=$('#deviceNote'),btn=$('#vib');if(!note||!btn)return;if(!vibrationSupported){S.vib=0;btn.disabled=true;btn.textContent='Vibration unavailable';btn.setAttribute('aria-pressed','false');note.textContent=message||'This browser does not expose vibration controls. Try the Sound option or a supported Android browser.';return}btn.disabled=false;btn.textContent='Vibration: '+(S.vib?'On':'Off');btn.setAttribute('aria-pressed',String(!!S.vib));note.textContent=message||(S.vib?'Vibration is enabled. Tap this button to test it, or tap the counter to count.':'Vibration is off. Turn it on to test your device.')}
 function fill(){$('#dsel').innerHTML=D.concat(S.custom).map(x=>`<option value="${x[0]}">${x[2].replace(/</g,'&lt;')}</option>`).join('');$('#dsel').value=S.cur}
 function render(){
  const d=dh(S.cur),n=S.c[S.cur]||0,g=S.goal;
@@ -189,7 +191,7 @@ $('#reset').onclick=()=>{if(confirm('Reset this counter to 0?')){S.c[S.cur]=0;$(
 $('#sun').onclick=()=>{S.sun=S.sun?0:1;S.sleep=0;if(S.sun){SEQ.forEach(k=>S.c[k]=0);S.cur='sub';S.goal=33}render()};
 $('#sleep').onclick=()=>{S.sleep=S.sleep?0:1;S.sun=0;if(S.sleep){SLEEP_SEQ.forEach(k=>S.c[k]=0);S.cur='akb';S.goal=34}render()};
 $('#add').onclick=()=>{const t=(prompt('Name of your dhikr')||'').trim().slice(0,60);if(t){const id='c'+Date.now();S.custom.push([id,'',t,'',0]);S.cur=id;S.goal=0;fill();render()}};
-$('#vib').onclick=()=>{if(!vibrationSupported){showDeviceNote();return}S.vib=S.vib?0:1;let testMessage='';if(S.vib){try{const ok=navigator.vibrate(35);testMessage=ok===false?'The browser did not start vibration. Try another supported browser.':'Vibration test sent. Tap the counter to test it again.'}catch(e){testMessage='Vibration could not start in this browser.'}}render();if(testMessage)$('#deviceNote').textContent=testMessage};
+$('#vib').onclick=()=>{if(!vibrationSupported){showDeviceNote();return}S.vib=S.vib?0:1;let testMessage=S.vib?'Vibration is enabled.':'Vibration is off.';if(S.vib){try{const ok=navigator.vibrate(60);if(ok===false)testMessage='Chrome rejected the vibration request. Check device/browser support and try again.';else testMessage='Test vibration requested. If the phone did not vibrate, check Android settings and Chrome support.'}catch(e){testMessage='Vibration request failed: '+(e&&e.message?e.message:'browser error')}}else{try{navigator.vibrate(0)}catch(e){}}render();showDeviceNote(testMessage)};
 $('#snd').onclick=()=>{S.snd=S.snd?0:1;render()};
 async function lk(){try{if(S.wake&&'wakeLock' in navigator)lock=await navigator.wakeLock.request('screen');else if(lock){lock.release();lock=null}}catch(e){}}
 $('#wake').onclick=()=>{S.wake=S.wake?0:1;lk();render()};
