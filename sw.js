@@ -1,8 +1,8 @@
-const CACHE_NAME = 'tasbih-digital-counter-v7';
-const PRECACHE_URLS = ["/", "/index.html", "/content.css", "/manifest.webmanifest", "/icon.svg", "/icon-192.png", "/icon-512.png", "/og-default.png", "/404.html", "/astaghfirullah.html", "/subhanallah.html", "/dhikr-after-salah.html", "/tasbih-before-sleep.html", "/morning-evening-adhkar.html", "/99-names-of-allah.html", "/what-is-tasbih.html", "/islamic-dates.html", "/about.html", "/contact.html", "/privacy-policy.html", "/disclaimer.html", "/sitemap.xml", '/alhamdulillah.html',
-  '/allahu-akbar.html',
-  '/la-ilaha-illallah.html',
-  '/salawat-durood.html',
+const CACHE_NAME = 'tasbih-digital-counter-v8';
+const PRECACHE_URLS = ["/", "/content.css", "/manifest.webmanifest", "/icon.svg", "/icon-192.png", "/icon-512.png", "/og-default.png", "/404.html", "/astaghfirullah", "/subhanallah", "/dhikr-after-salah", "/tasbih-before-sleep", "/morning-evening-adhkar", "/99-names-of-allah", "/what-is-tasbih", "/islamic-dates", "/about", "/contact", "/privacy-policy", "/disclaimer", "/sitemap.xml", '/alhamdulillah',
+  '/allahu-akbar',
+  '/la-ilaha-illallah',
+  '/salawat-durood',
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(PRECACHE_URLS)).then(() => self.skipWaiting()));
