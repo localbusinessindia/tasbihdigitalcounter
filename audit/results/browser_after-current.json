@@ -1,0 +1,23 @@
+[
+ {
+  "id": "B01",
+  "title": "Every sitemap URL returns 200 directly (no redirect), .html aliases 301 once, unknown path 404",
+  "status": "PASS",
+  "detail": "27 sitemap routes; server is an emulation of Netlify rules, not Netlify itself",
+  "evidence": []
+ },
+ {
+  "id": "B02",
+  "title": "Service-worker precache URLs all return 200 with no redirect",
+  "status": "PASS",
+  "detail": "45 URLs",
+  "evidence": []
+ },
+ {
+  "id": "B03",
+  "title": "Response headers: nosniff, referrer-policy, CSP, HSTS, frame protection, caching rules on key URLs",
+  "status": "PASS",
+  "detail": "headers come from _headers as interpreted by the local emulator; real Netlify headers are BLOCKED (no live access)",
+  "evidence": []
+ }
+]

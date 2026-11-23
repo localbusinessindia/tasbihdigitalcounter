@@ -1,0 +1,223 @@
+[
+ {
+  "id": "S01",
+  "title": "Required site files present",
+  "status": "PASS",
+  "detail": "10 required files found",
+  "evidence": []
+ },
+ {
+  "id": "S02",
+  "title": "Title/description/canonical/OG/viewport/charset/lang on every indexable page",
+  "status": "PASS",
+  "detail": "17 pages checked",
+  "evidence": []
+ },
+ {
+  "id": "S03",
+  "title": "Single h1, no heading-level skips, no duplicate ids",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S04a",
+  "title": "Internal links and assets resolve to existing files",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S04b",
+  "title": "Internal links point directly at canonical URLs (no redirect hop)",
+  "status": "FAIL",
+  "detail": "171 links go through a redirect",
+  "evidence": [
+   "99-names-of-allah.html: href=\"what-is-tasbih.html\" -> 301 -> /what-is-tasbih",
+   "99-names-of-allah.html: href=\"islamic-dates.html\" -> 301 -> /islamic-dates",
+   "99-names-of-allah.html: href=\"morning-evening-adhkar.html\" -> 301 -> /morning-evening-adhkar",
+   "99-names-of-allah.html: href=\"subhanallah.html\" -> 301 -> /subhanallah",
+   "99-names-of-allah.html: href=\"about.html\" -> 301 -> /about",
+   "99-names-of-allah.html: href=\"contact.html\" -> 301 -> /contact",
+   "99-names-of-allah.html: href=\"privacy-policy.html\" -> 301 -> /privacy-policy",
+   "99-names-of-allah.html: href=\"disclaimer.html\" -> 301 -> /disclaimer",
+   "about.html: href=\"contact.html\" -> 301 -> /contact",
+   "about.html: href=\"about.html\" -> 301 -> /about",
+   "about.html: href=\"contact.html\" -> 301 -> /contact",
+   "about.html: href=\"privacy-policy.html\" -> 301 -> /privacy-policy",
+   "about.html: href=\"disclaimer.html\" -> 301 -> /disclaimer",
+   "alhamdulillah.html: href=\"what-is-tasbih.html\" -> 301 -> /what-is-tasbih",
+   "alhamdulillah.html: href=\"islamic-dates.html\" -> 301 -> /islamic-dates",
+   "alhamdulillah.html: href=\"astaghfirullah.html\" -> 301 -> /astaghfirullah",
+   "alhamdulillah.html: href=\"subhanallah.html\" -> 301 -> /subhanallah",
+   "alhamdulillah.html: href=\"dhikr-after-salah.html\" -> 301 -> /dhikr-after-salah",
+   "alhamdulillah.html: href=\"morning-evening-adhkar.html\" -> 301 -> /morning-evening-adhkar",
+   "alhamdulillah.html: href=\"about.html\" -> 301 -> /about",
+   "alhamdulillah.html: href=\"contact.html\" -> 301 -> /contact",
+   "alhamdulillah.html: href=\"privacy-policy.html\" -> 301 -> /privacy-policy",
+   "alhamdulillah.html: href=\"disclaimer.html\" -> 301 -> /disclaimer",
+   "allahu-akbar.html: href=\"what-is-tasbih.html\" -> 301 -> /what-is-tasbih",
+   "allahu-akbar.html: href=\"islamic-dates.html\" -> 301 -> /islamic-dates",
+   "allahu-akbar.html: href=\"tasbih-before-sleep.html\" -> 301 -> /tasbih-before-sleep",
+   "allahu-akbar.html: href=\"astaghfirullah.html\" -> 301 -> /astaghfirullah",
+   "allahu-akbar.html: href=\"subhanallah.html\" -> 301 -> /subhanallah",
+   "allahu-akbar.html: href=\"dhikr-after-salah.html\" -> 301 -> /dhikr-after-salah",
+   "allahu-akbar.html: href=\"morning-evening-adhkar.html\" -> 301 -> /morning-evening-adhkar",
+   "allahu-akbar.html: href=\"about.html\" -> 301 -> /about",
+   "allahu-akbar.html: href=\"contact.html\" -> 301 -> /contact",
+   "allahu-akbar.html: href=\"privacy-policy.html\" -> 301 -> /privacy-policy",
+   "allahu-akbar.html: href=\"disclaimer.html\" -> 301 -> /disclaimer",
+   "astaghfirullah.html: href=\"what-is-tasbih.html\" -> 301 -> /what-is-tasbih",
+   "astaghfirullah.html: href=\"islamic-dates.html\" -> 301 -> /islamic-dates",
+   "astaghfirullah.html: href=\"alhamdulillah.html\" -> 301 -> /alhamdulillah",
+   "astaghfirullah.html: href=\"allahu-akbar.html\" -> 301 -> /allahu-akbar",
+   "astaghfirullah.html: href=\"la-ilaha-illallah.html\" -> 301 -> /la-ilaha-illallah",
+   "astaghfirullah.html: href=\"salawat-durood.html\" -> 301 -> /salawat-durood"
+  ]
+ },
+ {
+  "id": "S05",
+  "title": "No orphan pages (all reachable from homepage via internal links)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S06",
+  "title": "sitemap.xml valid, canonical, complete, no noindex/nonexistent URLs",
+  "status": "PASS",
+  "detail": "17 URLs",
+  "evidence": []
+ },
+ {
+  "id": "S07",
+  "title": "robots.txt allows pages and render resources and references the sitemap",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S08",
+  "title": "JSON-LD parses, required props present, URLs match canonical, no invented ratings",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S08b",
+  "title": "No FAQPage markup that cannot qualify for rich results / may not mirror visible text",
+  "status": "FAIL",
+  "detail": "",
+  "evidence": [
+   "99-names-of-allah.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "astaghfirullah.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "dhikr-after-salah.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "index.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "islamic-dates.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "morning-evening-adhkar.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "subhanallah.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "tasbih-before-sleep.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)",
+   "what-is-tasbih.html: FAQPage markup (Google restricts FAQ rich results to authoritative government/health sites; does not match policy for this site type)"
+  ]
+ },
+ {
+  "id": "S09",
+  "title": "Images, icons, OG image and web manifest are valid and consistent",
+  "status": "FAIL",
+  "detail": "site has no <img> elements; alt-text audit applies to icons/OG only",
+  "evidence": [
+   "/icon-512.png: purpose=maskable but corner pixel is transparent (not full-bleed)",
+   "manifest start_url is relative \"./\" (prefer \"/\" for a root-hosted PWA)",
+   "manifest missing \"id\""
+  ]
+ },
+ {
+  "id": "S10a",
+  "title": "No unresolved placeholder content",
+  "status": "FAIL",
+  "detail": "owner action required if FAIL: supply a real contact email",
+  "evidence": [
+   "contact.html: placeholder matches /YOUR-EMAIL@example\\.com/",
+   "contact.html: placeholder matches /example\\.com/",
+   "morning-evening-adhkar.html: placeholder matches /REPLACE[_ -]?ME/"
+  ]
+ },
+ {
+  "id": "S10b",
+  "title": "No secrets / credentials in source (regex scan)",
+  "status": "PASS",
+  "detail": "pattern scan only; not proof of absence",
+  "evidence": []
+ },
+ {
+  "id": "S11",
+  "title": "Security/caching headers configured in _headers",
+  "status": "FAIL",
+  "detail": "configuration inspection only; live headers are verified separately (BLOCKED if no deployment access)",
+  "evidence": [
+   "_headers lacks Content-Security-Policy",
+   "_headers lacks Strict-Transport-Security",
+   "no clickjacking protection (frame-ancestors / X-Frame-Options)",
+   "un-fingerprinted icon files served with 1-year immutable cache"
+  ]
+ },
+ {
+  "id": "S12",
+  "title": "Inline scripts and service worker parse (node --check)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S13",
+  "title": "No near-duplicate pages (8-word shingle Jaccard > 0.25)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S14",
+  "title": "Privacy policy matches implementation (host, analytics, ads, storage)",
+  "status": "FAIL",
+  "detail": "",
+  "evidence": [
+   "privacy policy names GitHub Pages as host but the site deploys on Netlify (netlify.toml, *.netlify.app)",
+   "policy refers to analytics; none implemented and wording does not state that",
+   "policy does not disclose the service worker / Cache Storage the site uses"
+  ]
+ },
+ {
+  "id": "S15",
+  "title": "HTML validation (Nu Html Checker, errors only)",
+  "status": "FAIL",
+  "detail": "0 CSS env() messages ignored (validator does not parse env() in shorthand; valid CSS)",
+  "evidence": [
+   "index.html:100: The “label” element may contain at most one “button”, “input”, “meter”, “output”, “progress”, “select”, or “textarea” descendant."
+  ]
+ },
+ {
+  "id": "S16",
+  "title": "External links reachable",
+  "status": "BLOCKED",
+  "detail": "sandbox egress allow-list does not include these hosts; list recorded for manual / CI check",
+  "evidence": [
+   "https://adssettings.google.com",
+   "https://policies.google.com/technologies/partner-sites",
+   "https://quran.com/33/56",
+   "https://sunnah.com/bukhari:3370",
+   "https://sunnah.com/bukhari:5362",
+   "https://sunnah.com/bukhari:6306",
+   "https://sunnah.com/bukhari:6307",
+   "https://sunnah.com/bukhari:6318",
+   "https://sunnah.com/bukhari:6405",
+   "https://sunnah.com/bukhari:6406",
+   "https://sunnah.com/muslim:2691",
+   "https://sunnah.com/muslim:2692",
+   "https://sunnah.com/muslim:2727a",
+   "https://sunnah.com/muslim:591",
+   "https://sunnah.com/muslim:596a",
+   "https://sunnah.com/muslim:597a",
+   "https://ummalquracalendar.org/umm-al-qura-calendar-2027/"
+  ]
+ }
+]

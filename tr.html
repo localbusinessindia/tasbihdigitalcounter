@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link href="/manifest.webmanifest" rel="manifest"/>
+<link href="/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/icon-192.png" rel="apple-touch-icon" sizes="192x192"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Ücretsiz Online Tesbih Sayacı | Zikirmatik</title>
+<meta content="Kayıt gerektirmeyen ücretsiz tesbih sayacı ve zikirmatik. Sübhanallah, Elhamdülillah, Allahu Ekber, istiğfar ve 25+ zikri otomatik kayıt ve günlük hedefle sayın." name="description"/>
+<link href="https://tasbihdigitalcounter.netlify.app/tr" rel="canonical"/>
+<link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/"/><link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar"/><link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur"/><link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id"/><link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr"/><link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/"/>
+<meta content="#0f5132" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Ücretsiz Online Tesbih Sayacı | Zikirmatik" property="og:title"/>
+<meta content="Kayıt gerektirmeyen ücretsiz tesbih sayacı ve zikirmatik. Sübhanallah, Elhamdülillah, Allahu Ekber, istiğfar ve 25+ zikri otomatik kayıt ve günlük hedefle sayın." property="og:description"/>
+<meta content="https://tasbihdigitalcounter.netlify.app/tr" property="og:url"/>
+<meta content="tr_TR" property="og:locale"/>
+<meta content="https://tasbihdigitalcounter.netlify.app/og-default.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--tx:#1d2521;--mu:#5d6b64;--ac:#0f5132;--ac2:#d4af37;--bd:#e2ded2;--tap-bg:#0f5132;--pressed-bg:#0f5132}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1511;--card:#16211b;--tx:#e8eee9;--mu:#9bb0a5;--ac:#3fa77a;--bd:#25332b;--tap-bg:#075b3d;--pressed-bg:#075b3d}}
+:root[data-theme=dark]{--bg:#0d1511;--card:#16211b;--tx:#e8eee9;--mu:#9bb0a5;--ac:#3fa77a;--bd:#25332b;--tap-bg:#075b3d;--pressed-bg:#075b3d}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header,footer{width:calc(100% - 32px);max-width:1008px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:8px}
+.logo{font-weight:700;color:var(--ac);text-decoration:none;white-space:nowrap}
+main.site-main{width:calc(100% - 32px);max-width:1008px;margin:0 auto;padding:0;display:grid;grid-template-columns:160px minmax(0,640px) 160px;gap:24px;align-items:start}
+.main-content{width:100%;max-width:640px;min-width:0;margin:0 auto;padding:0}.ad-rail{display:block;min-height:600px;width:100%}.ad-rail:empty{visibility:hidden}
+h1{font-size:1.5rem;line-height:1.25;margin:8px 0 14px;text-align:center}
+h2{font-size:1.2rem;line-height:1.3;margin:28px 0 8px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;margin:14px 0}
+select,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;touch-action:manipulation}
+select{width:100%;margin-bottom:12px}button{cursor:pointer}button[aria-pressed=true],.on{background:var(--pressed-bg);color:#fff;border-color:var(--pressed-bg)}
+.row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
+.device-note{min-height:1.5em;margin:4px 0 12px;text-align:center;color:var(--mu);font-size:.88rem}
+#ar{font-size:1.9rem;text-align:center;direction:rtl;line-height:1.7;font-family:"Amiri","Noto Naskh Arabic","Geeza Pro","Traditional Arabic",serif}
+#tr{text-align:center;font-weight:600}#mn{text-align:center;color:var(--mu);font-size:.9rem;min-height:1.4em}
+.ringw{position:relative;width:min(260px,70vw);aspect-ratio:1;margin:12px auto}
+.ringw svg{width:100%;height:100%;transform:rotate(-90deg)}circle{fill:none;stroke-width:10}.bgc{stroke:var(--bd)}#ring{stroke:var(--ac2);stroke-linecap:round;stroke-dasharray:565.5;transition:stroke-dashoffset .2s}
+#tap{position:absolute;inset:14px;border-radius:50%;border:0;background:var(--tap-bg);color:#fff;font-size:3rem;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;user-select:none;-webkit-tap-highlight-color:transparent}
+#tap:active{transform:scale(.97)}#g{font-size:.9rem;font-weight:500;opacity:1;color:#fff}
+#msg{text-align:center;color:var(--ac);font-weight:600;min-height:1.5em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin-top:8px}.stats b{display:block;font-size:1.25rem}.stats span{color:var(--mu);font-size:.8rem}
+ul{padding-left:20px}details{border-bottom:1px solid var(--bd);padding:8px 0}summary{cursor:pointer;font-weight:600}
+footer{color:var(--mu);font-size:.85rem;text-align:center;padding-top:24px;padding-bottom:28px}footer a{color:var(--mu);margin:0 6px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.lede{font-size:1.02rem;line-height:1.55;color:var(--mu);max-width:610px;margin:0 auto 14px}.more a{line-height:1.65}main .main-content>.card{margin-top:12px}.main-content>.card>:first-child{margin-top:0}.main-content>.card>:last-child{margin-bottom:0}
+body.focus-mode header,body.focus-mode footer,body.focus-mode .main-content>h1,body.focus-mode .main-content>.lede,body.focus-mode .main-content>h2,body.focus-mode .main-content>.content-section,body.focus-mode .main-content>ol,body.focus-mode .main-content>ul,body.focus-mode .main-content>p:not(#dailyGoalText),body.focus-mode .main-content>details,body.focus-mode .main-content>.more{display:none!important}
+body.focus-mode main.site-main{display:block;max-width:640px}
+body.focus-mode .ad-rail{display:none}
+body.focus-mode #exitFocus{display:block;margin:12px auto}
+body.focus-mode .main-content>.card{margin-top:12px}
+#exitFocus:not([hidden]){display:block}
+.stats{grid-template-columns:repeat(auto-fit,minmax(88px,1fr))}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ac2);outline-offset:3px}
+@media(min-width:1450px){header,footer{max-width:1288px}main.site-main{max-width:1288px;grid-template-columns:300px minmax(0,640px) 300px;gap:24px}}
+@media(max-width:1099px){main.site-main{display:block;max-width:640px}.ad-rail{display:none}}
+@media(max-width:520px){header{padding-top:12px;padding-bottom:8px}}
+
+/* Gentle motion: useful feedback without distracting from dhikr. */
+.hero-spark{display:inline-block;color:var(--ac2);font-size:.72em;vertical-align:top;animation:sparkFloat 3.2s ease-in-out infinite}
+.card{animation:softRise .55s ease both}
+#tap{transition:transform .16s ease,box-shadow .25s ease;box-shadow:0 10px 26px rgba(15,81,50,.14)}
+#tap:active{transform:scale(.955)}
+#n.count-pop{animation:countPop .22s ease}
+#ring{transition:stroke-dashoffset .28s ease}
+button{transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease}
+button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 4px 12px rgba(15,81,50,.12)}
+button:disabled{opacity:.55;cursor:not-allowed}
+.device-note{text-align:center;min-height:1.4em;margin:0 0 6px}
+@keyframes sparkFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(18deg)}}
+@keyframes softRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes countPop{0%{transform:scale(1)}45%{transform:scale(1.13)}100%{transform:scale(1)}}
+main a{color:var(--ac)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+.lang-switch{display:block;margin:0 0 10px;font-size:.9rem}.lang-switch a{margin:0 4px}.lang-switch strong{margin:0 4px}.step-label{display:inline-flex;align-items:center;gap:8px;color:var(--mu);font-size:.9rem}.step-label select{width:auto;margin:0;padding:6px 10px}#tr{direction:ltr;unicode-bidi:plaintext}[dir=rtl] ol,[dir=rtl] ul{padding-left:0;padding-right:20px}.consent-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--card);color:var(--tx);border-top:1px solid var(--bd);padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;font-size:.9rem}.consent-bar p{margin:0;max-width:640px}.consent-bar a{color:var(--ac)}.back-bar{margin:6px 0 0;font-size:.95rem}.voice-guide-panel{margin:12px 0;padding:12px 14px;border:1px solid var(--bd);border-radius:14px;background:var(--card);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.voice-guide-panel p{flex-basis:100%;margin:2px 0}.voice-play{display:block;margin:6px auto}.small{font-size:.88rem;color:var(--mu)}#routine-player label{display:block;margin:10px 0 4px;font-weight:600}#routine-player label.sr{position:absolute}#routine-player input{width:100%;font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px 12px}#routine-player progress{width:100%;height:10px}.rp-tap{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:12px auto;width:min(200px,60vw);aspect-ratio:1;border-radius:50%;background:var(--tap-bg);color:#fff;border:0;font-size:2.6rem;font-weight:700}.rp-tap .small{color:#fff;font-size:.9rem;font-weight:500}.rp-tr{text-align:center;font-weight:600;margin:4px 0}.rp-rem{text-align:center;color:var(--ac);font-weight:600}.rp-resume{border:1px dashed var(--bd);border-radius:12px;padding:8px 12px;margin:8px 0}:lang(ur){font-family:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Noto Naskh Arabic","Geeza Pro",system-ui,serif;line-height:2}:lang(ar){font-family:"Noto Naskh Arabic","Geeza Pro","Segoe UI","Traditional Arabic",system-ui,serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Tasbih Digital Counter","url":"https://tasbihdigitalcounter.netlify.app/tr","applicationCategory":"LifestyleApplication","operatingSystem":"Any","inLanguage":"tr","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]}</script>
+</head>
+<body>
+<header class="site-header"><a class="logo" href="/">Tasbih Digital Counter</a><button aria-label="Tema" id="theme" data-i="theme">Tema</button></header>
+<main class="site-main">
+<aside aria-hidden="true" class="ad-rail ad-rail-left" data-ad-placement="left"></aside>
+<div class="main-content">
+<nav class="lang-switch" aria-label="Language"><a href="/" hreflang="en" lang="en">English</a> · <a href="/ar" hreflang="ar" lang="ar">العربية</a> · <a href="/ur" hreflang="ur" lang="ur">اردو</a> · <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> · <strong lang="tr">Türkçe</strong></nav>
+<h1>Ücretsiz Online Tesbih Sayacı <span class="hero-spark" aria-hidden="true">✦</span></h1><p class="lede" style="text-align:center">Günlük zikir için ücretsiz dijital tesbih. Hedefinizi belirleyin, rehberli zikir düzenini izleyin ve sayımınızı hesap açmadan cihazınızda saklayın.</p>
+<section aria-label="Tasbih counter" class="card">
+<label class="sr" for="dsel" data-i="chooseDhikr">Zikir seç</label><select id="dsel"></select>
+<div id="ar" lang="ar"></div><div id="tr" dir="ltr"></div><div id="mn"></div>
+<div class="ringw"><svg aria-hidden="true" viewbox="0 0 200 200"><circle class="bgc" cx="100" cy="100" r="90"></circle><circle cx="100" cy="100" id="ring" r="90" stroke-dashoffset="565.5"></circle></svg>
+<button aria-label="Count" id="tap"><span id="n">0</span><span id="g"></span></button></div>
+<div aria-live="polite" id="msg" role="status"></div>
+<div class="row" id="goals"><button data-g="33">33</button><button data-g="66">66</button><button data-g="99">99</button><button data-g="100">100</button><button data-g="0">∞</button><button id="cg" data-i="custom">Özel</button></div>
+<div class="row"><button id="minus" data-i="undo">Geri al −1</button><button id="reset" data-i="reset">Sıfırla</button><button aria-pressed="false" id="sun" data-i="sun">Namazdan sonra 33-33-34</button><button aria-pressed="false" id="sleep" data-i="sleep">Uyku zikri</button><button id="sleepOrder" type="button">Uyku sırası: 34-33-33</button><button id="add" data-i="add">+ Özel zikir</button></div>
+<div class="row"><button aria-pressed="true" id="vib" type="button">Titreşim: Açık</button><button aria-pressed="false" id="snd" type="button" data-i="snd">Ses</button><button aria-pressed="false" id="wake" type="button" data-i="wake">Ekran açık kalsın</button><button aria-pressed="false" id="focus" type="button" data-i="focus">Odak modu</button></div>
+<div class="row"><button id="dailyGoalBtn" type="button">Günlük hedef: 100</button><button id="shareCard" type="button" data-i="share">İlerlemeyi paylaş</button><label class="step-label"><span data-i="step">Adım boyutu</span> <select id="stepSel"><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div>
+<p class="device-note" id="deviceNote" aria-live="polite" role="status">Kısa bir test titreşimi için “Titreşim” düğmesine dokunun.</p>
+<div class="stats"><div><b id="st">0</b><span data-i="today">Bugün</span></div><div><b id="sl">0</b><span data-i="total">Toplam</span></div><div><b id="ss">0</b><span data-i="streak">Gün serisi</span></div><div><b id="best">0</b><span data-i="best">En iyi gün</span></div><div><b id="dailyProgress">0%</b><span data-i="dailyPct">Günlük hedef</span></div></div>
+<p id="dailyGoalText" class="device-note" aria-live="polite"></p>
+<div class="row"><button id="exp" data-i="exp">Yedeği dışa aktar</button><button id="impbtn" type="button" data-i="imp">Yedeği içe aktar</button><input accept=".json,application/json" data-ia="impAria" aria-label="İçe aktarılacak yedek dosyasını seçin" hidden id="imp" type="file"></div>
+</section>
+<p class="device-note">Bu sayaç yalnızca sayma aracıdır. Zikirlerin lafzını ve sayısını güvendiğiniz kaynaklardan öğrendiğiniz şekilde uygulayın.</p>
+<button id="exitFocus" type="button" data-i="exitFocus" hidden>Odak modundan çık</button>
+<h2>Bu dijital tesbih sayacı nasıl kullanılır?</h2>
+<ol><li>Listeden bir zikir seçin: Sübhanallah, Elhamdülillah, Allahu Ekber veya Estağfirullah gibi.</li><li>33, 66, 99, 100 gibi bir sayı seçin ya da kendi hedefinizi belirleyin.</li><li>Her zikirde büyük daireye bir kez dokunun. Yanlış dokunursanız Geri al&#x27;ı kullanın.</li><li>İlerlemeniz tarayıcınızda saklanır. Ayrı bir kopya için yedeği dışa aktarın.</li></ol>
+<h2>Rehberli zikir düzenleri</h2>
+<div class="card"><h3>Namazdan sonra: 33-33-34</h3><p>33 kez Sübhanallah, 33 kez Elhamdülillah ve 34 kez Allahu Ekber. Bu, namaz sonrası zikrin bilinen şekillerinden biridir.</p><a href="/?routine=after-salah">Namaz sonrası sayacı başlat</a></div>
+<div class="card"><h3>Uyumadan önce: 34-33-33</h3><p>Uyumadan önce rivayet edilen şekillerden biri: 34 Allahu Ekber, 33 Sübhanallah, 33 Elhamdülillah. Diğer rivayetlerde aynı toplam farklı sırayla gelir.</p><a href="/?routine=bedtime">Uyku sayacını başlat</a></div>
+<h2>Neden online tesbih sayacı kullanmalı?</h2>
+<ul><li><strong>Esnek hedefler:</strong> 33, 66, 99, 100, sınırsız ya da özel bir sayı seçin.</li><li><strong>Birçok zikir:</strong> 25&#x27;ten fazla hazır zikir; kendi zikrinizi de ekleyebilirsiniz.</li><li><strong>Her yerde kullanışlı:</strong> titreşim, ses, ekranı açık tutma ve koyu tema.</li><li><strong>Gizlilik:</strong> sayımlar ve ayarlar tarayıcınızda tutulur, bir hesaba yüklenmez.</li><li><strong>Çevrimdışı kullanım:</strong> ilk ziyaretten sonra internet olmadan da çalışır.</li></ul>
+<h2>Sık sorulan sorular</h2>
+<details><summary>Online tesbih sayacı nedir?</summary><p>Zikir tekrarlarını saymanın dijital yoludur. Sayıyı aklınızda tutmak yerine her zikirde bir kez dokunursunuz.</p></details><details><summary>Sayaç ilerlememi kaydediyor mu?</summary><p>Evet. Sayımlar, günlük toplamlar ve ayarlar tarayıcınızda saklanır. JSON yedeği de dışa aktarabilirsiniz.</p></details><details><summary>Namaz sonrası ve uyku modu arasındaki fark nedir?</summary><p>Namaz sonrası: 33 Sübhanallah, 33 Elhamdülillah, 34 Allahu Ekber. Uyku öncesi için 34-33-33 veya 33-33-34 sırasını seçebilirsiniz.</p></details><details><summary>Çevrimdışı çalışır mı?</summary><p>Evet. İlk ziyaretten sonra sayfalar tarayıcıda önbelleğe alınır; tarayıcı depolama ayarlarına bağlı olarak internet olmadan da kullanabilirsiniz.</p></details><details><summary>Kendi zikrimi sayabilir miyim?</summary><p>Evet. “Özel zikir” düğmesiyle ad ve hedef belirleyin ya da hazır listeden seçin.</p></details><details><summary>Sayaç ücretsiz mi?</summary><p>Evet, kullanımı ücretsizdir. Site, işletme giderleri için reklam gösterebilir.</p></details>
+<h2>Diğer rehberler (İngilizce)</h2>
+<ul class="more"><li><a href="/dhikr-list">Dhikr list: Arabic, transliteration and meaning</a></li><li><a href="/dhikr-after-salah">Dhikr after salah: 33-33-34</a></li><li><a href="/tasbih-before-sleep">Tasbih before sleep</a></li><li><a href="/99-names-of-allah">99 Names of Allah</a></li><li><a href="/guides">All guides</a></li></ul>
+</div>
+<aside aria-hidden="true" class="ad-rail ad-rail-right" data-ad-placement="right"></aside>
+</main>
+<footer><nav class="lang-switch" aria-label="Language links"><a href="/" hreflang="en" lang="en">English</a> · <a href="/ar" hreflang="ar" lang="ar">العربية</a> · <a href="/ur" hreflang="ur" lang="ur">اردو</a> · <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> · <strong lang="tr">Türkçe</strong></nav><a href="/about">Hakkında</a><a href="/contact">İletişim</a><a href="/privacy-policy">Gizlilik</a><a href="/disclaimer">Sorumluluk reddi</a><p>© 2026 Tasbih Digital Counter</p></footer>
+<script src="/i18n.js"></script>
+<script src="/counter.js" defer></script>
+<script src="/consent.js" defer></script>
+</body>
+</html>

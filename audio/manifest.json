@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "note": "No recordings are included in v2.6. An entry is only used when it has a file, verified:true, reciter, source and license. See audio/README.md.",
+  "items": {}
+}

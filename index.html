@@ -2,19 +2,21 @@
 
 <html lang="en">
 <head>
+<meta charset="utf-8">
 <link href="/manifest.webmanifest" rel="manifest"/>
 <link href="/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
 <link href="/icon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/icon-192.png" rel="apple-touch-icon" sizes="192x192"/>
-<meta charset="utf-8"/>
+
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>Free Online Tasbih &amp; Tasbeeh Counter | Dhikr Counter</title>
-<meta content="Count dhikr with a free online tasbih and tasbeeh counter. Choose 33, 99 or a custom goal, follow guided routines, and save your count on your device." name="description"/>
+<meta content="Free online tasbih and dhikr counter with no sign-up. Count 28 dhikr, set goals, follow guided routines, and auto-save your count. Works offline." name="description"/>
 <link href="https://tasbihdigitalcounter.netlify.app/" rel="canonical"/>
+<link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/"/><link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar"/><link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur"/><link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id"/><link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr"/><link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/"/>
 <meta content="#0f5132" name="theme-color"/>
 <meta content="website" property="og:type"/>
 <meta content="Free Online Tasbih &amp; Tasbeeh Counter | Dhikr Counter" property="og:title"/>
-<meta content="Count dhikr with a free online tasbih and tasbeeh counter. Choose 33, 99 or a custom goal, follow guided routines, and save your count on your device." property="og:description"/>
+<meta content="Free online tasbih and dhikr counter with no sign-up. Count 28 dhikr, set goals, follow guided routines, and auto-save your count. Works offline." property="og:description"/>
 <meta content="https://tasbihdigitalcounter.netlify.app/" property="og:url"/>
 <style>
 :root{--bg:#f6f4ee;--card:#fff;--tx:#1d2521;--mu:#5d6b64;--ac:#0f5132;--ac2:#d4af37;--bd:#e2ded2;--tap-bg:#0f5132;--pressed-bg:#0f5132}
@@ -34,7 +36,7 @@ select,button{font:inherit;color:var(--tx);background:var(--card);border:1px sol
 select{width:100%;margin-bottom:12px}button{cursor:pointer}button[aria-pressed=true],.on{background:var(--pressed-bg);color:#fff;border-color:var(--pressed-bg)}
 .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
 .device-note{min-height:1.5em;margin:4px 0 12px;text-align:center;color:var(--mu);font-size:.88rem}
-#ar{font-size:1.9rem;text-align:center;direction:rtl;line-height:1.7;font-family:"Amiri","Traditional Arabic",serif}
+#ar{font-size:1.9rem;text-align:center;direction:rtl;line-height:1.7;font-family:"Amiri","Noto Naskh Arabic","Geeza Pro","Traditional Arabic",serif}
 #tr{text-align:center;font-weight:600}#mn{text-align:center;color:var(--mu);font-size:.9rem;min-height:1.4em}
 .ringw{position:relative;width:min(260px,70vw);aspect-ratio:1;margin:12px auto}
 .ringw svg{width:100%;height:100%;transform:rotate(-90deg)}circle{fill:none;stroke-width:10}.bgc{stroke:var(--bd)}#ring{stroke:var(--ac2);stroke-linecap:round;stroke-dasharray:565.5;transition:stroke-dashoffset .2s}
@@ -44,7 +46,14 @@ select{width:100%;margin-bottom:12px}button{cursor:pointer}button[aria-pressed=t
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin-top:8px}.stats b{display:block;font-size:1.25rem}.stats span{color:var(--mu);font-size:.8rem}
 ul{padding-left:20px}details{border-bottom:1px solid var(--bd);padding:8px 0}summary{cursor:pointer;font-weight:600}
 footer{color:var(--mu);font-size:.85rem;text-align:center;padding-top:24px;padding-bottom:28px}footer a{color:var(--mu);margin:0 6px}
-.sr{position:absolute;left:-9999px}.lede{font-size:1.02rem;line-height:1.55;color:var(--mu);max-width:610px;margin:0 auto 14px}.more a{line-height:1.65}main .main-content>.card{margin-top:12px}.main-content>.card>:first-child{margin-top:0}.main-content>.card>:last-child{margin-bottom:0}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.lede{font-size:1.02rem;line-height:1.55;color:var(--mu);max-width:610px;margin:0 auto 14px}.more a{line-height:1.65}main .main-content>.card{margin-top:12px}.main-content>.card>:first-child{margin-top:0}.main-content>.card>:last-child{margin-bottom:0}
+body.focus-mode header,body.focus-mode footer,body.focus-mode .main-content>h1,body.focus-mode .main-content>.lede,body.focus-mode .main-content>h2,body.focus-mode .main-content>.content-section,body.focus-mode .main-content>ol,body.focus-mode .main-content>ul,body.focus-mode .main-content>p:not(#dailyGoalText),body.focus-mode .main-content>details,body.focus-mode .main-content>.more{display:none!important}
+body.focus-mode main.site-main{display:block;max-width:640px}
+body.focus-mode .ad-rail{display:none}
+body.focus-mode #exitFocus{display:block;margin:12px auto}
+body.focus-mode .main-content>.card{margin-top:12px}
+#exitFocus:not([hidden]){display:block}
+.stats{grid-template-columns:repeat(auto-fit,minmax(88px,1fr))}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ac2);outline-offset:3px}
 @media(min-width:1450px){header,footer{max-width:1288px}main.site-main{max-width:1288px;grid-template-columns:300px minmax(0,640px) 300px;gap:24px}}
 @media(max-width:1099px){main.site-main{display:block;max-width:640px}.ad-rail{display:none}}
@@ -64,10 +73,11 @@ button:disabled{opacity:.55;cursor:not-allowed}
 @keyframes sparkFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(18deg)}}
 @keyframes softRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes countPop{0%{transform:scale(1)}45%{transform:scale(1.13)}100%{transform:scale(1)}}
+main a{color:var(--ac)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Tasbih Digital Counter","url":"https://tasbihdigitalcounter.netlify.app/","applicationCategory":"LifestyleApplication","operatingSystem":"Any","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Online tasbih and tasbeeh counting","Dhikr counter with custom goals","Post-salah 33-33-34 guided mode","Bedtime 34-33-33 guided mode","Local progress storage","Offline support after the first visit"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an online tasbih counter?","acceptedAnswer":{"@type":"Answer","text":"An online tasbih counter is a digital tool for keeping count while reciting dhikr, tasbih or tasbeeh. Tap once for each repetition."}},{"@type":"Question","name":"What is the difference between the post-salah and bedtime modes?","acceptedAnswer":{"@type":"Answer","text":"One post-salah narration gives SubhanAllah 33, Alhamdulillah 33 and Allahu Akbar 34. Bedtime narrations include more than one order for the same 100-count remembrance; see the bedtime guide and cited hadith references."}},{"@type":"Question","name":"Does the counter save my progress?","acceptedAnswer":{"@type":"Answer","text":"Counts and settings are saved locally in your browser on your device. No account is needed."}},{"@type":"Question","name":"Does the digital tasbih work offline?","acceptedAnswer":{"@type":"Answer","text":"After the site has been loaded and cached by your browser, the counter can work offline."}},{"@type":"Question","name":"Is this dhikr counter free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The counter is free to use. The website may display advertising."}}]}]}</script>
+.lang-switch{display:block;margin:0 0 10px;font-size:.9rem}.lang-switch a{margin:0 4px}.lang-switch strong{margin:0 4px}.step-label{display:inline-flex;align-items:center;gap:8px;color:var(--mu);font-size:.9rem}.step-label select{width:auto;margin:0;padding:6px 10px}#tr{direction:ltr;unicode-bidi:plaintext}[dir=rtl] ol,[dir=rtl] ul{padding-left:0;padding-right:20px}.consent-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--card);color:var(--tx);border-top:1px solid var(--bd);padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;font-size:.9rem}.consent-bar p{margin:0;max-width:640px}.consent-bar a{color:var(--ac)}.back-bar{margin:6px 0 0;font-size:.95rem}.voice-guide-panel{margin:12px 0;padding:12px 14px;border:1px solid var(--bd);border-radius:14px;background:var(--card);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.voice-guide-panel p{flex-basis:100%;margin:2px 0}.voice-play{display:block;margin:6px auto}.small{font-size:.88rem;color:var(--mu)}#routine-player label{display:block;margin:10px 0 4px;font-weight:600}#routine-player label.sr{position:absolute}#routine-player input{width:100%;font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px 12px}#routine-player progress{width:100%;height:10px}.rp-tap{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:12px auto;width:min(200px,60vw);aspect-ratio:1;border-radius:50%;background:var(--tap-bg);color:#fff;border:0;font-size:2.6rem;font-weight:700}.rp-tap .small{color:#fff;font-size:.9rem;font-weight:500}.rp-tr{text-align:center;font-weight:600;margin:4px 0}.rp-rem{text-align:center;color:var(--ac);font-weight:600}.rp-resume{border:1px dashed var(--bd);border-radius:12px;padding:8px 12px;margin:8px 0}:lang(ur){font-family:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Noto Naskh Arabic","Geeza Pro",system-ui,serif;line-height:2}:lang(ar){font-family:"Noto Naskh Arabic","Geeza Pro","Segoe UI","Traditional Arabic",system-ui,serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Tasbih Digital Counter","url":"https://tasbihdigitalcounter.netlify.app/","applicationCategory":"LifestyleApplication","operatingSystem":"Any","inLanguage":["en","ar","ur","id","tr"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Online tasbih and tasbeeh counting","28 ready-made dhikr with Arabic, transliteration and meaning","Dhikr counter with custom goals and step size","Sound and vibration alert at your target","Post-salah 33-33-34 guided mode","Two selectable bedtime dhikr orders","Local progress storage","Offline support after the first visit","Optional device-based Arabic text-to-speech pronunciation guide"],"description":"Free online tasbih, tasbeeh and dhikr counter with 28 ready-made dhikr, goals, step size, guided after-salah and bedtime routines, and local progress saving. Available in English, Arabic, Urdu, Indonesian and Turkish."}]}</script>
 <meta content="https://tasbihdigitalcounter.netlify.app/og-default.png" property="og:image"/>
 <meta content="https://tasbihdigitalcounter.netlify.app/og-default.png" property="og:image:secure_url"/>
 <meta content="image/png" property="og:image:type"/>
@@ -76,7 +86,7 @@ button:disabled{opacity:.55;cursor:not-allowed}
 <meta content="Tasbih Digital Counter – free online tasbih, tasbeeh and dhikr counter" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Free Online Tasbih &amp; Tasbeeh Counter | Dhikr Counter" name="twitter:title"/>
-<meta content="Count dhikr with a free online tasbih and tasbeeh counter. Choose 33, 99 or a custom goal, follow guided routines, and save your count on your device." name="twitter:description"/>
+<meta content="Free online tasbih and dhikr counter with no sign-up. Count 28 dhikr, set goals, follow guided routines, and auto-save your count. Works offline." name="twitter:description"/>
 <meta content="https://tasbihdigitalcounter.netlify.app/og-default.png" name="twitter:image"/>
 </head>
 <body>
@@ -85,35 +95,54 @@ button:disabled{opacity:.55;cursor:not-allowed}
 <!-- Future AdSense sidebar placement: add approved responsive ad unit inside this rail. -->
 <aside aria-hidden="true" class="ad-rail ad-rail-left" data-ad-placement="left"></aside>
 <div class="main-content">
+<nav class="lang-switch" aria-label="Language"><strong lang="en">English</strong> · <a href="/ar" hreflang="ar" lang="ar">العربية</a> · <a href="/ur" hreflang="ur" lang="ur">اردو</a> · <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/tr" hreflang="tr" lang="tr">Türkçe</a></nav>
+<p id="backBar" class="back-bar" hidden><a id="backGuide" href="/">← Back to guide</a></p>
 <h1>Free Online Tasbih Counter <span class="hero-spark" aria-hidden="true">✦</span></h1><p class="lede" style="text-align:center">A free digital tasbih, tasbeeh and dhikr counter for daily remembrance. Set your own goal, follow guided routines and keep your count on your device.</p>
 <section aria-label="Tasbih counter" class="card">
-<label class="sr" for="dsel">Choose dhikr</label><select id="dsel"></select>
-<div id="ar" lang="ar"></div><div id="tr"></div><div id="mn"></div>
+<label class="sr" for="dsel" data-i="chooseDhikr">Choose dhikr</label><select id="dsel"></select>
+<div id="ar" lang="ar"></div><div id="tr" dir="ltr"></div><div id="mn"></div>
 <div class="ringw"><svg aria-hidden="true" viewbox="0 0 200 200"><circle class="bgc" cx="100" cy="100" r="90"></circle><circle cx="100" cy="100" id="ring" r="90" stroke-dashoffset="565.5"></circle></svg>
 <button aria-label="Count" id="tap"><span id="n">0</span><span id="g"></span></button></div>
 <div aria-live="polite" id="msg" role="status"></div>
-<div class="row" id="goals"><button data-g="33">33</button><button data-g="66">66</button><button data-g="99">99</button><button data-g="100">100</button><button data-g="0">∞</button><button id="cg">Custom</button></div>
-<div class="row"><button id="minus">Undo −1</button><button id="reset">Reset</button><button aria-pressed="false" id="sun">After Salah 33-33-34</button><button aria-pressed="false" id="sleep">Bedtime 34-33-33</button><button id="add">+ Custom dhikr</button></div>
-<div class="row"><button aria-pressed="true" id="vib" type="button">Vibration: On</button><button aria-pressed="false" id="snd" type="button">Sound</button><button aria-pressed="false" id="wake" type="button">Keep screen on</button></div>
+<div class="row" id="goals"><button data-g="33">33</button><button data-g="66">66</button><button data-g="99">99</button><button data-g="100">100</button><button data-g="0">∞</button><button id="cg" data-i="custom">Custom</button></div>
+<div class="row"><button id="minus" data-i="undo">Undo −1</button><button id="reset" data-i="reset">Reset</button><button aria-pressed="false" id="sun" data-i="sun">After Salah 33-33-34</button><button aria-pressed="false" id="sleep" data-i="sleep">Bedtime routine</button><button id="sleepOrder" type="button">Bedtime order: 34-33-33</button><button id="add" data-i="add">+ Custom dhikr</button></div>
+<div class="row"><button aria-pressed="true" id="vib" type="button">Vibration: On</button><button aria-pressed="false" id="snd" type="button" data-i="snd">Sound</button><button aria-pressed="false" id="wake" type="button" data-i="wake">Keep screen on</button><button aria-pressed="false" id="focus" type="button" data-i="focus">Focus mode</button></div>
+<div class="row"><button id="dailyGoalBtn" type="button">Daily goal: 100</button><button id="shareCard" type="button" data-i="share">Share progress</button><label class="step-label"><span data-i="step">Step size</span> <select id="stepSel"><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div>
 <p class="device-note" id="deviceNote" aria-live="polite" role="status">Tap “Vibration: On” to send a short test vibration.</p>
-<div class="stats"><div><b id="st">0</b><span>Today</span></div><div><b id="sl">0</b><span>Total</span></div><div><b id="ss">0</b><span>Day streak</span></div></div>
-<div class="row"><button id="exp">Export backup</button><label><button onclick="this.nextElementSibling.click()">Import backup</button><input accept=".json" hidden="" id="imp" type="file"/></label></div>
+<div class="stats"><div><b id="st">0</b><span data-i="today">Today</span></div><div><b id="sl">0</b><span data-i="total">Total</span></div><div><b id="ss">0</b><span data-i="streak">Day streak</span></div><div><b id="best">0</b><span data-i="best">Best day</span></div><div><b id="dailyProgress">0%</b><span data-i="dailyPct">Daily goal</span></div></div>
+<p id="dailyGoalText" class="device-note" aria-live="polite"></p>
+<div class="row"><button id="exp" data-i="exp">Export backup</button><button id="impbtn" type="button" data-i="imp">Import backup</button><input accept=".json,application/json" data-ia="impAria" aria-label="Choose a backup file to import" hidden id="imp" type="file"></div>
 </section>
-<p class="small" style="text-align:center;margin:16px 0 0">This online tasbih counter is also useful as a digital tasbeeh counter, dhikr counter or zikr counter. It works on phones, tablets and computers.</p>
+<p style="text-align:center;margin:16px 0 0;color:var(--mu);font-size:.88rem">This online tasbih counter is also useful as a digital tasbeeh counter, dhikr counter or zikr counter. It works on phones, tablets and computers.</p>
+<button id="exitFocus" type="button" hidden>Exit focus mode</button>
 <h2>How to use this digital tasbih counter</h2>
 <ol><li>Choose a dhikr from the list, such as SubhanAllah, Alhamdulillah, Allahu Akbar or Astaghfirullah.</li><li>Choose a count such as 33, 66, 99, 100 or set a custom goal.</li><li>Tap the large counter once for each recitation. Use Undo if you make a mistake.</li><li>Your progress is saved locally in your browser. Export a backup if you want to keep a separate copy.</li></ol>
 <h2>Guided dhikr routines</h2>
-<div class="card"><h3>After salah: 33-33-34</h3><p>Follow SubhanAllah 33 times, Alhamdulillah 33 times and Allahu Akbar 34 times. This is one narrated form of remembrance after prayer.</p><a href="/?routine=after-salah">Start the post-salah counter</a> · <a href="dhikr-after-salah.html">Read the full dhikr after salah guide</a></div>
-<div class="card"><h3>Before sleep: one 34-33-33 version</h3><p>One reported bedtime order is Allahu Akbar 34, SubhanAllah 33 and Alhamdulillah 33. Sahih al-Bukhari 5362 gives the same total in a different order; see the bedtime guide for both references.</p><a href="/?routine=bedtime">Start the bedtime counter</a> · <a href="tasbih-before-sleep.html">Read the bedtime tasbih guide</a></div>
+<div class="card"><h3>After salah: 33-33-34</h3><p>Follow SubhanAllah 33 times, Alhamdulillah 33 times and Allahu Akbar 34 times. This is one narrated form of remembrance after prayer.</p><a href="/?routine=after-salah">Start the post-salah counter</a> · <a href="/dhikr-after-salah">Read the full dhikr after salah guide</a></div>
+<div class="card"><h3>Before sleep: one 34-33-33 version</h3><p>One reported bedtime order is Allahu Akbar 34, SubhanAllah 33 and Alhamdulillah 33. Sahih al-Bukhari 5362 gives the same total in a different order; see the bedtime guide for both references.</p><a href="/?routine=bedtime">Start the bedtime counter</a> · <a href="/tasbih-before-sleep">Read the bedtime tasbih guide</a></div>
+<section class="card" id="routine-player" aria-label="Guided routine player"><h2>Guided routine player</h2><p>Follow after-salah, bedtime (both narrated orders), morning or evening routines step by step with a counter, pause, previous and next, or build your own routine. This feature needs JavaScript. See the <a href="/morning-evening-adhkar">morning and evening guide</a> for sources.</p></section>
 <h2>Why use an online tasbih or tasbeeh counter?</h2>
 <ul><li><strong>Flexible goals:</strong> choose 33, 66, 99, 100, infinity or a custom count.</li><li><strong>Multiple dhikr options:</strong> switch between common phrases or add your own custom dhikr.</li><li><strong>Useful on the go:</strong> vibration, sound, keep-screen-on and dark-mode options.</li><li><strong>Private by design:</strong> counts and settings are stored in your browser, not uploaded to an account.</li><li><strong>Offline use:</strong> after the first visit and cache, the counter can continue without an internet connection.</li></ul>
+<h2>Popular dhikr to count</h2>
+<p>Open the counter with a phrase already selected:</p>
+<ul class="more"><li><a href="/?dhikr=sub&amp;goal=33">SubhanAllah · 33</a></li><li><a href="/?dhikr=alh&amp;goal=33">Alhamdulillah · 33</a></li><li><a href="/?dhikr=akb&amp;goal=34">Allahu Akbar · 34</a></li><li><a href="/?dhikr=ast&amp;goal=100">Astaghfirullah · 100</a></li><li><a href="/?dhikr=sbh&amp;goal=100">SubhanAllahi wa bihamdihi · 100</a></li><li><a href="/?dhikr=sal&amp;goal=100">Allahumma salli ala Muhammad · 100</a></li><li><a href="/?dhikr=hql&amp;goal=100">La hawla wa la quwwata illa billah · 100</a></li><li><a href="/?study=names">99 Names of Allah study session (no target)</a></li><li><a href="/dhikr-list"><strong>See all 28 dhikr with Arabic and meaning</strong></a></li></ul>
 <h2>Learn the meaning of common dhikr</h2>
-<ul class="more"><li><a href="what-is-tasbih.html">What is tasbih? Tasbih and tasbeeh meaning</a></li><li><a href="astaghfirullah.html">Astaghfirullah meaning in English and Arabic</a></li><li><a href="subhanallah.html">SubhanAllah meaning, Arabic and reward</a></li><li><a href="alhamdulillah.html">Alhamdulillah meaning and Arabic</a></li><li><a href="allahu-akbar.html">Allahu Akbar meaning and Arabic</a></li><li><a href="la-ilaha-illallah.html">La ilaha illallah meaning</a></li><li><a href="salawat-durood.html">Salawat and durood meaning</a></li><li><a href="dhikr-after-salah.html">Dhikr after salah: 33-33-34 guide</a></li><li><a href="tasbih-before-sleep.html">Tasbih before sleep: 34-33-33 guide</a></li><li><a href="morning-evening-adhkar.html">Morning and evening adhkar</a></li><li><a href="99-names-of-allah.html">99 Names of Allah with meaning</a></li><li><a href="islamic-dates.html">Muslim holidays and Islamic dates 2027</a></li></ul>
+<ul class="more"><li><a href="/dhikr-list">Dhikr list: Arabic, transliteration and meaning</a></li><li><a href="/guides">All dhikr and tasbih guides</a></li><li><a href="/digital-tasbih-beginner-guide">Digital tasbih for beginners</a></li><li><a href="/digital-vs-physical-tasbih">Digital vs physical tasbih</a></li><li><a href="/daily-dhikr-habit">How to build a daily dhikr habit</a></li><li><a href="/add-tasbih-to-home-screen">Add the counter to your home screen</a></li><li><a href="/what-is-tasbih">What is tasbih? Tasbih and tasbeeh meaning</a></li><li><a href="/astaghfirullah">Astaghfirullah meaning in English and Arabic</a></li><li><a href="/subhanallah">SubhanAllah meaning, Arabic and reward</a></li><li><a href="/alhamdulillah">Alhamdulillah meaning and Arabic</a></li><li><a href="/allahu-akbar">Allahu Akbar meaning and Arabic</a></li><li><a href="/la-ilaha-illallah">La ilaha illallah meaning</a></li><li><a href="/salawat-durood">Salawat and durood meaning</a></li><li><a href="/dhikr-after-salah">Dhikr after salah: 33-33-34 guide</a></li><li><a href="/tasbih-before-sleep">Tasbih before sleep: 34-33-33 guide</a></li><li><a href="/morning-evening-adhkar">Morning and evening adhkar</a></li><li><a href="/99-names-of-allah">99 Names of Allah with meaning</a></li><li><a href="/islamic-dates">Muslim holidays and Islamic dates 2027</a></li></ul>
 
 <section class="content-section">
 <h2>Online tasbih counter features for everyday dhikr</h2>
 <p>This free online tasbih counter is designed for people who want a simple way to count tasbih, tasbeeh, zikr or dhikr on a phone or computer. The large digital counter makes each tap easy to see, while the progress ring gives a quick visual indication of how close you are to a chosen target. You can use the tool for a short set of 33 repetitions, a 99-count session, a 100-count personal target or a custom number that suits your routine.</p>
 <p>Unlike a basic tally counter, the page includes common Arabic remembrance phrases with transliteration and a short meaning. Select SubhanAllah, Alhamdulillah, Allahu Akbar, La ilaha illallah, Astaghfirullah or another available dhikr. The counter is a counting aid: read and pronounce the words carefully, and keep your attention on the remembrance rather than on the screen.</p>
+<h3>28 ready-made dhikr in one counter</h3>
+<p>The selector groups 28 remembrances into four sets: core dhikr such as SubhanAllah, Alhamdulillah, Allahu Akbar and La ilaha illallah; istighfar phrases for seeking forgiveness; salawat on the Prophet ﷺ; and duas from the Quran and Sunnah. Each one shows the Arabic text, a transliteration and a short English meaning, and each keeps its own count, so switching phrases never erases your progress. You can also add your own dhikr with a name and target. The <a href="/dhikr-list">dhikr list page</a> shows every phrase in one place.</p>
+<h3>Step size, sound and target alerts</h3>
+<p>Most dhikr is counted one recitation at a time, so the step size starts at 1. If you want to tally larger numbers, such as a set of 10 at once, choose a bigger step and each tap adds that amount. Guided routines always use steps of 1. With Sound turned on you hear a short tick for each tap and a three-note chime when you reach your target, so you can finish a set without watching the screen. On supported Android browsers a short vibration marks the target as well. Many iPhones and desktop browsers do not expose vibration, which is why the sound option exists.</p>
+<h3>Daily goal, streak and best day</h3>
+<p>Set a daily goal and the counter shows your progress toward it, your current day streak, your total and your best day. These figures are calculated on your device from your own taps. They are meant to support a steady habit, not to compare yourself with other people, and they disappear if you clear your browser data unless you export a backup first.</p>
+<h3>Count the 99 Names of Allah</h3>
+<p>The <a href="/?study=names">99 Names study session</a> opens a counter with no target so you can move through the Names at your own pace while reading them on the <a href="/99-names-of-allah">99 Names of Allah page</a>. The site does not prescribe a repetition count for the Names.</p>
+<h3>Use the counter in your language</h3>
+<p>The whole counter, including buttons and messages, is available in <a href="/ar" hreflang="ar" lang="ar">العربية</a>, <a href="/ur" hreflang="ur" lang="ur">اردو</a>, <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> and <a href="/tr" hreflang="tr" lang="tr">Türkçe</a>. The Arabic dhikr text is the same in every language; only the interface and meanings change. Your saved counts work across all language versions on the same device.</p>
 <h3>Digital tasbih, tasbeeh counter and zikr counter</h3>
 <p>People search for this kind of tool using different spellings, including digital tasbih counter, digital tasbeeh counter, online tasbeeh, online zikr counter, tesbih counter and dhikr counter online. These phrases often describe the same basic need: a convenient way to keep track of repeated remembrance. This site focuses on Islamic dhikr counting rather than general-purpose number tallying.</p>
 <h3>Use the counter with or without a target</h3>
@@ -130,78 +159,29 @@ button:disabled{opacity:.55;cursor:not-allowed}
 <details><summary>Does the counter save my progress?</summary><p>Yes. Counts, daily totals and settings are saved locally in your browser on your device. You can export a JSON backup from the counter.</p></details>
 <details><summary>Does it work offline?</summary><p>After the first visit, the pages and counter are cached by your browser. You can then continue counting when you are offline, subject to your browser's storage settings.</p></details>
 <details><summary>Is this digital tasbih counter free?</summary><p>Yes. The counter is free to use. The website may show ads to support its operation.</p></details>
+<details><summary>How many dhikr can I count with this tasbih counter?</summary><p>The counter includes 28 ready-made dhikr in four groups: core dhikr, istighfar, salawat and duas from the Quran and Sunnah. Each has Arabic, transliteration and a short meaning, and you can add your own custom dhikr as well. See the full <a href="/dhikr-list">dhikr list</a>.</p></details>
+<details><summary>Is it permissible to use a digital tasbih instead of counting on my fingers?</summary><p>Many scholars treat prayer beads and counters as permissible aids for keeping count. Some prefer counting on the fingers, based on a narration reported in Sunan Abi Dawud and Jami at-Tirmidhi. This site is a counting tool, not a source of rulings, so ask a scholar you trust if you want a specific answer.</p></details>
+<details><summary>Do I need wudu to do dhikr?</summary><p>Wudu is not a condition for making dhikr, although many people prefer to remember Allah in a state of purity. For rulings about other acts of worship, ask a qualified scholar.</p></details>
+<details><summary>What is the reward for saying SubhanAllah 100 times?</summary><p>A narration in <a href="https://sunnah.com/muslim:2698" rel="noopener">Sahih Muslim 2698</a> mentions that whoever glorifies Allah one hundred times has a thousand good deeds recorded or a thousand sins erased. Wording can differ between narrations and from other reports about SubhanAllahi wa bihamdihi, so read the source itself. See the <a href="/subhanallah">SubhanAllah guide</a>.</p></details>
+<details><summary>Can I count the 99 Names of Allah with this counter?</summary><p>Yes. Open the <a href="/?study=names">99 Names study session</a>, which has no target, and tap once for each Name as you read it. See the <a href="/99-names-of-allah">99 Names of Allah page</a> for the list and meanings.</p></details>
+<details><summary>What does the step size do?</summary><p>Step size sets how much each tap adds. It starts at 1, which suits normal dhikr. Larger steps help if you want to tally bigger numbers quickly. Guided routines always count in steps of 1, and Undo removes your last step.</p></details>
+<details><summary>Does the counter make a sound when I reach my target?</summary><p>Yes, if Sound is on. You hear a short tick for each tap and a three-note chime when the target is reached. On supported Android browsers the device also vibrates. Many iPhones and desktop browsers do not support vibration.</p></details>
+<details><summary>How does the daily streak work?</summary><p>The streak counts consecutive days on which you counted at least once. If you miss a day it starts again from 1. It is stored on your device only.</p></details>
+<details><summary>Why did my count disappear?</summary><p>Counts are saved in your browser, so clearing site data, using private browsing or switching device or browser starts you from zero. Use Export backup regularly and Import backup to restore your counts on the same or another device.</p></details>
+<details><summary>How do I add the counter to my home screen?</summary><p>On iPhone, open the site in Safari, tap Share and choose Add to Home Screen. On Android Chrome, open the menu and choose Add to Home screen or Install app. After the first visit it can keep working offline.</p></details>
+<details><summary>Can I use this counter for things other than dhikr?</summary><p>It is built for dhikr, but you can create a custom counter with your own name and use the step size for a simple tally. Keep worship counts in their own dhikr so your daily totals stay meaningful.</p></details>
+<details><summary>Is the tasbih counter available in other languages?</summary><p>Yes. The interface is available in <a href="/ar" hreflang="ar" lang="ar">العربية</a>, <a href="/ur" hreflang="ur" lang="ur">اردو</a>, <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> and <a href="/tr" hreflang="tr" lang="tr">Türkçe</a>. The guides are currently in English.</p></details>
+
 </div>
 <!-- Future AdSense sidebar placement: add approved responsive ad unit inside this rail. -->
 <aside aria-hidden="true" class="ad-rail ad-rail-right" data-ad-placement="right"></aside>
 </main>
-<footer><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="disclaimer.html">Disclaimer</a><p>© 2026 Tasbih Digital Counter</p></footer>
-<script>
-(()=>{
-const $=s=>document.querySelector(s),C=565.5;
-const D=[['sub','سُبْحَانَ ٱللَّٰهِ','SubhanAllah','Glory be to Allah',33],['alh','ٱلْحَمْدُ لِلَّٰهِ','Alhamdulillah','All praise is for Allah',33],['akb','ٱللَّٰهُ أَكْبَرُ','Allahu Akbar','Allah is the Greatest',34],['lai','لَا إِلَٰهَ إِلَّا ٱللَّٰهُ','La ilaha illallah','There is no god but Allah',100],['ast','أَسْتَغْفِرُ ٱللَّٰهَ','Astaghfirullah','I seek forgiveness from Allah',100],['hql','لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ','La hawla wa la quwwata illa billah','No power or strength except with Allah',100],['sbh','سُبْحَانَ ٱللَّٰهِ وَبِحَمْدِهِ','SubhanAllahi wa bihamdihi','Glory and praise be to Allah',100],['sal','ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ','Allahumma salli ala Muhammad','O Allah, send blessings upon Muhammad',100],['hsb','حَسْبُنَا ٱللَّٰهُ وَنِعْمَ ٱلْوَكِيلُ','Hasbunallahu wa ni\'mal wakeel','Allah is enough for us, the best disposer of affairs',33],['bis','بِسْمِ ٱللَّٰهِ','Bismillah','In the name of Allah',0]];
-const SEQ=['sub','alh','akb'],SG=[33,33,34],SLEEP_SEQ=['akb','sub','alh'],SLEEP_GOALS=[34,33,33];
-let S={cur:'sub',goal:33,c:{},life:0,day:'',today:0,last:'',streak:0,sun:0,sleep:0,custom:[],vib:1,snd:0,wake:0,theme:'auto'};
-try{Object.assign(S,JSON.parse(localStorage.getItem('tdc')||'{}'))}catch(e){}
-const dstr=(o=0)=>{const d=new Date(Date.now()+o*864e5);return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()};
-const dh=id=>D.find(x=>x[0]==id)||S.custom.find(x=>x[0]==id)||D[0];
-const params=new URLSearchParams(location.search);
-if(params.get('routine')==='after-salah'){S.sun=1;S.sleep=0;S.cur='sub';S.goal=33}
-else if(params.get('routine')==='bedtime'){S.sun=0;S.sleep=1;S.cur='akb';S.goal=34}
-else if(params.get('dhikr')&&D.some(x=>x[0]===params.get('dhikr'))){S.sun=0;S.sleep=0;S.cur=params.get('dhikr');const qgoal=parseInt(params.get('goal')||'',10);S.goal=qgoal>0&&qgoal<=100000?qgoal:dh(S.cur)[4]}
-let ac,lock;
-function beep(){try{ac=ac||new AudioContext();const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=880;g.gain.value=.08;o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+.04)}catch(e){}}
-const vibrationSupported=typeof navigator!=='undefined'&&typeof navigator.vibrate==='function';
-function vib(p){if(S.vib&&vibrationSupported){try{navigator.vibrate(p)}catch(e){}}}
-function showDeviceNote(message){const note=$('#deviceNote'),btn=$('#vib');if(!note||!btn)return;if(!vibrationSupported){S.vib=0;btn.disabled=true;btn.textContent='Vibration unavailable';btn.setAttribute('aria-pressed','false');note.textContent=message||'This browser does not expose vibration controls. Try the Sound option or a supported Android browser.';return}btn.disabled=false;btn.textContent='Vibration: '+(S.vib?'On':'Off');btn.setAttribute('aria-pressed',String(!!S.vib));note.textContent=message||(S.vib?'Vibration is enabled. Tap this button to test it, or tap the counter to count.':'Vibration is off. Turn it on to test your device.')}
-function fill(){$('#dsel').innerHTML=D.concat(S.custom).map(x=>`<option value="${x[0]}">${x[2].replace(/</g,'&lt;')}</option>`).join('');$('#dsel').value=S.cur}
-function render(){
- const d=dh(S.cur),n=S.c[S.cur]||0,g=S.goal;
- $('#ar').textContent=d[1];$('#tr').textContent=d[2];$('#mn').textContent=d[3];
- $('#n').textContent=n;$('#n').classList.remove('count-pop');void $('#n').offsetWidth;$('#n').classList.add('count-pop');$('#g').textContent=g?'of '+g:'no limit';
- $('#ring').style.strokeDashoffset=g?C*(1-Math.min(1,n/g)):C;
- if(S.day!==dstr()){S.day=dstr();S.today=0}
- $('#st').textContent=S.today;$('#sl').textContent=S.life;$('#ss').textContent=S.streak;
- document.querySelectorAll('#goals [data-g]').forEach(b=>b.classList.toggle('on',+b.dataset.g===g));
- [['sun',S.sun],['sleep',S.sleep],['vib',S.vib],['snd',S.snd],['wake',S.wake]].forEach(([k,v])=>$('#'+k).setAttribute('aria-pressed',!!v));showDeviceNote();
- $('#dsel').value=S.cur;
- const t=S.theme;if(t=='auto')document.documentElement.removeAttribute('data-theme');else document.documentElement.dataset.theme=t;
- try{localStorage.setItem('tdc',JSON.stringify(S))}catch(e){}
-}
-function tap(){
- const n=S.c[S.cur]=(S.c[S.cur]||0)+1;S.life++;S.today++;
- if(S.last!==dstr()){S.streak=S.last===dstr(-1)?S.streak+1:1;S.last=dstr()}
- if(S.snd)beep();
- if(S.goal&&n===S.goal){
-  vib([120,60,120]);
-  const activeSeq=S.sleep?SLEEP_SEQ:(S.sun?SEQ:null),activeGoals=S.sleep?SLEEP_GOALS:(S.sun?SG:null);
-  const i=activeSeq?activeSeq.indexOf(S.cur):-1;
-  if(activeSeq&&i>-1&&i<2){S.cur=activeSeq[i+1];S.goal=activeGoals[i+1];$('#msg').textContent='Done. Next: '+dh(S.cur)[2]}
-  else if(S.sleep||S.sun){$('#msg').textContent=(S.sleep?'Bedtime':'After-salah')+' dhikr complete. Masha\'Allah!';S.sun=0;S.sleep=0}
-  else $('#msg').textContent='Goal reached. Masha\'Allah!';
- }else{vib(12);$('#msg').textContent=''}
- render();
-}
-$('#tap').onclick=tap;
-document.addEventListener('keydown',e=>{if((e.key==' '||e.key=='Enter')&&!/^(SELECT|INPUT|TEXTAREA|BUTTON)$/.test(e.target.tagName)){e.preventDefault();tap()}});
-$('#dsel').onchange=e=>{S.cur=e.target.value;S.goal=dh(S.cur)[4];S.sun=0;S.sleep=0;$('#msg').textContent='';render()};
-$('#goals').onclick=e=>{if(e.target.dataset.g!==undefined){S.goal=+e.target.dataset.g;render()}};
-$('#cg').onclick=()=>{const v=parseInt(prompt('Enter your goal (1-100000)'),10);if(v>0&&v<=1e5){S.goal=v;render()}};
-$('#minus').onclick=()=>{if(S.c[S.cur]>0){S.c[S.cur]--;S.life=Math.max(0,S.life-1);S.today=Math.max(0,S.today-1);render()}};
-$('#reset').onclick=()=>{if(confirm('Reset this counter to 0?')){S.c[S.cur]=0;$('#msg').textContent='';render()}};
-$('#sun').onclick=()=>{S.sun=S.sun?0:1;S.sleep=0;if(S.sun){SEQ.forEach(k=>S.c[k]=0);S.cur='sub';S.goal=33}render()};
-$('#sleep').onclick=()=>{S.sleep=S.sleep?0:1;S.sun=0;if(S.sleep){SLEEP_SEQ.forEach(k=>S.c[k]=0);S.cur='akb';S.goal=34}render()};
-$('#add').onclick=()=>{const t=(prompt('Name of your dhikr')||'').trim().slice(0,60);if(t){const id='c'+Date.now();S.custom.push([id,'',t,'',0]);S.cur=id;S.goal=0;fill();render()}};
-$('#vib').onclick=()=>{if(!vibrationSupported){showDeviceNote();return}S.vib=S.vib?0:1;let testMessage=S.vib?'Vibration is enabled.':'Vibration is off.';if(S.vib){try{const ok=navigator.vibrate(60);if(ok===false)testMessage='Chrome rejected the vibration request. Check device/browser support and try again.';else testMessage='Test vibration requested. If the phone did not vibrate, check Android settings and Chrome support.'}catch(e){testMessage='Vibration request failed: '+(e&&e.message?e.message:'browser error')}}else{try{navigator.vibrate(0)}catch(e){}}render();showDeviceNote(testMessage)};
-$('#snd').onclick=()=>{S.snd=S.snd?0:1;render()};
-async function lk(){try{if(S.wake&&'wakeLock' in navigator)lock=await navigator.wakeLock.request('screen');else if(lock){lock.release();lock=null}}catch(e){}}
-$('#wake').onclick=()=>{S.wake=S.wake?0:1;lk();render()};
-document.addEventListener('visibilitychange',()=>{if(!document.hidden&&S.wake)lk()});
-$('#theme').onclick=()=>{S.theme={auto:'light',light:'dark',dark:'auto'}[S.theme]||'auto';render()};
-$('#exp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download='tasbih-backup.json';a.click()};
-$('#imp').onchange=e=>{const f=e.target.files[0];if(f)f.text().then(t=>{try{Object.assign(S,JSON.parse(t));fill();render()}catch(x){alert('This file is not a valid backup.')}})};
-fill();render();showDeviceNote();
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
-})();
-</script>
+<footer><nav class="lang-switch" aria-label="Language links"><strong lang="en">English</strong> · <a href="/ar" hreflang="ar" lang="ar">العربية</a> · <a href="/ur" hreflang="ur" lang="ur">اردو</a> · <a href="/id" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/tr" hreflang="tr" lang="tr">Türkçe</a></nav><a href="/about">About</a><a href="/contact">Contact</a><a href="/privacy-policy">Privacy</a><a href="/disclaimer">Disclaimer</a><p>© 2026 Tasbih Digital Counter</p></footer>
+
+<script src="/i18n.js" defer></script>
+<script src="/counter.js" defer></script>
+<script src="/voice-guide.js" defer></script>
+<script src="/routines.js" defer></script>
+<script src="/consent.js" defer></script>
 </body>
 </html>

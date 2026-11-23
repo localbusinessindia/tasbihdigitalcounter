@@ -13,12 +13,11 @@ This is a static HTML website. It is configured to publish from the ZIP root and
 The source repository can remain on GitHub; this ZIP is a static deploy package. The canonical tags, sitemap and robots.txt intentionally retain the `tasbihdigitalcounter.netlify.app` address.
 
 ## Important
-- `keyword-research/` contains the consolidated keyword exports and mapping notes. It is research material, not a public-facing site section.
 - No AdSense publisher code is included because no approved publisher ID/snippet was supplied.
 - Islamic date entries are estimates; check local moon-sighting announcements. Religious content should be reviewed by a knowledgeable person before publication.
 
 ## SEO keyword prioritisation (v3)
-This build uses a low-KD-first strategy without removing harder terms: KD 0–14 are primary opportunities, KD 15–29 are secondary, KD 30–49 are supporting, and KD 50+ are long-term. See `keyword-research/low-kd-page-priority-plan.csv` and `keyword-research/target-keyword-map.csv`. KD is an external estimate, not a Google ranking factor or guarantee.
+This build uses a low-KD-first strategy without removing harder terms: KD 0–14 are primary opportunities, KD 15–29 are secondary, KD 30–49 are supporting, and KD 50+ are long-term. KD is an external estimate, not a Google ranking factor or guarantee.
 
 
 ## v4 visual, sharing and install updates
@@ -46,3 +45,20 @@ The desktop rails are marked with `data-ad-placement="left"` and `data-ad-placem
 - The vibration toggle now requests a short test pulse directly inside the user's tap handler; turning vibration off also attempts to cancel an active pattern.
 - Updated the service-worker cache name to v7 so deployed browsers can fetch the corrected files.
 - Vibration still depends on Android device/browser support and system settings; the web page cannot force a phone motor to run if Chrome or the device blocks the Vibration API.
+
+
+## Audit update (2026-11-14, v9)
+See `README.md` and `AUDIT-RESULTS.md`. Service-worker cache name is now `tasbih-digital-counter-v9`.
+
+
+## v2.5 updates
+- **Counter code** moved to `counter.js`; UI strings and the 28 dhikr presets live in `i18n.js` (generated).
+- **Language pages:** `/ar`, `/ur`, `/id`, `/tr` (hreflang cluster + sitemap alternates). Edit copy in `tools/i18n_data.py` and `tools/lang_pages.py`, then run `python3 tools/build_site.py` from the repo root to regenerate `i18n.js`, the four language pages, `dhikr-list.html` and `guides.html`. Translations should be reviewed by native speakers.
+- **Custom domain later:** `https://tasbihdigitalcounter.netlify.app` appears in canonicals, sitemap, robots.txt, hreflang and JSON-LD. Do one project-wide find/replace to your new domain, change `BASE` in `tools/build_site.py`, and the `HOST` line in `audit/static_audit.py`.
+
+## Enabling ads (when AdSense approves the site)
+1. Set `ADS_CLIENT` at the top of `consent.js` (format `ca-pub-…`).
+2. Rename `_headers.ads-enabled` to `_headers` (it carries the CSP that allows Google ad hosts; the current `_headers` stays strict until then).
+3. Put the approved ad units inside the `.ad-rail` asides (give each a fixed min-height to avoid layout shift).
+4. For visitors in the EEA, UK and Switzerland Google requires a Google-certified consent tool; enable AdSense "Privacy & messaging" (verify current requirements in your AdSense account). `consent.js` is a simple opt-in gate, not a certified CMP.
+5. Review `privacy-policy.html` and update its date.

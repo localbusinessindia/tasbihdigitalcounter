@@ -1,0 +1,9 @@
+{
+  "name": "tasbih-site-audit-tools",
+  "private": true,
+  "description": "Optional tooling for the repeatable audit in this folder (static site, no runtime dependencies).",
+  "devDependencies": {
+    "axe-core": "4.10.2",
+    "vnu-jar": "^26.11.9"
+  }
+}

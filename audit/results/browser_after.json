@@ -1,0 +1,233 @@
+[
+ {
+  "id": "B01",
+  "title": "Every sitemap URL returns 200 directly (no redirect), .html aliases 301 once, unknown path 404",
+  "status": "PASS",
+  "detail": "27 sitemap routes; server is an emulation of Netlify rules, not Netlify itself",
+  "evidence": []
+ },
+ {
+  "id": "B02",
+  "title": "Service-worker precache URLs all return 200 with no redirect",
+  "status": "PASS",
+  "detail": "45 URLs",
+  "evidence": []
+ },
+ {
+  "id": "B03",
+  "title": "Response headers: nosniff, referrer-policy, CSP, HSTS, frame protection, caching rules on key URLs",
+  "status": "PASS",
+  "detail": "headers come from _headers as interpreted by the local emulator; real Netlify headers are BLOCKED (no live access)",
+  "evidence": []
+ },
+ {
+  "id": "B04",
+  "title": "No console errors, page errors, CSP violations or failed requests on any route",
+  "status": "PASS",
+  "detail": "28 routes loaded in Chromium",
+  "evidence": []
+ },
+ {
+  "id": "B05",
+  "title": "Counter core: tap, undo, reset, goal buttons, dhikr select, ring progress, persistence",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B06",
+  "title": "Goal completion + custom goal: input validation (valid, 0, text, negative, >100000, cancel)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B07",
+  "title": "After-salah 33-33-34 and bedtime 34-33-33 routines: sequence, goals, completion, deep links",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B08",
+  "title": "Export backup downloads valid JSON; import restores it; invalid / hostile backups are rejected or sanitised and do not break the app",
+  "status": "PASS",
+  "detail": "hostile payloads: wrong types, arrays, strings, attribute-injection ids, markup in names",
+  "evidence": []
+ },
+ {
+  "id": "B09",
+  "title": "Custom dhikr: add, select, count; markup in names rendered as text",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B10",
+  "title": "Keyboard: Enter on links/summary is NOT hijacked by the counter; Space/Enter on page counts; key-repeat ignored",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B11",
+  "title": "Settings toggles: theme cycle, vibration, sound, keep-awake report state accurately without errors",
+  "status": "PASS",
+  "detail": "actual vibration hardware cannot be verified in headless Chromium",
+  "evidence": []
+ },
+ {
+  "id": "B12",
+  "title": "Day-streak display does not show a stale streak after a missed day",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B13",
+  "title": "Counter button exposes the current count to assistive tech",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B14",
+  "title": "Import control is valid, labelled and keyboard operable (button, not nested in label)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B15",
+  "title": "Performance stress: 2000 rapid taps counted exactly and handler stays fast",
+  "status": "PASS",
+  "detail": "2000 synthetic taps in 1205 ms (headless lab, not field data)",
+  "evidence": []
+ },
+ {
+  "id": "B16",
+  "title": "islamic-dates table matches the browser Umm al-Qura calendar and weekdays",
+  "status": "PASS",
+  "detail": "10 rows compared (evening events compared against next civil day); Intl Umm al-Qura in Chromium 157.0.8103.78",
+  "evidence": []
+ },
+ {
+  "id": "B17",
+  "title": "Offline/PWA: service worker installs, precached pages load offline, error pages are not cached",
+  "status": "PASS",
+  "detail": "Chromium only",
+  "evidence": []
+ },
+ {
+  "id": "B18",
+  "title": "No horizontal overflow / clipped content on any page at 320, 375, 430, 768, 1366, 1920 and 812x375 landscape",
+  "status": "PASS",
+  "detail": "28 pages x 7 viewports (Chromium viewport emulation, not physical devices)",
+  "evidence": []
+ },
+ {
+  "id": "B19",
+  "title": "Home counter workflow completable at 320x568 and 375x812: tap button fully inside viewport after scroll, >=44px",
+  "status": "PASS",
+  "detail": "emulated touch",
+  "evidence": []
+ },
+ {
+  "id": "B20",
+  "title": "axe-core WCAG 2.0/2.1/2.2 A+AA: zero violations on all pages (light, desktop + 375px mobile)",
+  "status": "PASS",
+  "detail": "automated scan only; not proof of full WCAG compliance",
+  "evidence": []
+ },
+ {
+  "id": "B21",
+  "title": "axe-core WCAG A+AA in dark mode (OS dark and manual dark toggle) on all pages",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B22",
+  "title": "axe-core best-practice rules (advisory; failures listed, not blocking)",
+  "status": "PASS",
+  "detail": "advisory findings: none",
+  "evidence": []
+ },
+ {
+  "id": "B23",
+  "title": "Keyboard: every interactive element on the home page is reachable by Tab and has a visible focus indicator",
+  "status": "PASS",
+  "detail": "99 focusable elements reached of 99 visible",
+  "evidence": []
+ },
+ {
+  "id": "B24",
+  "title": "prefers-reduced-motion disables animations/transitions",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B26",
+  "title": "Routine player: after-salah 33-33-34 steps, pause/resume, previous/next, restore after reload, completion, stats updated",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B27",
+  "title": "Bedtime routine player: both narrated orders (34-33-33 and 33-33-34)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B28",
+  "title": "Morning/evening routine player: 6 starter steps, no invented Arabic text, completes",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B29",
+  "title": "Custom routine creator: validation, save, run, persistence, delete, markup shown as text",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B30",
+  "title": "99 Names tools: search, favourites, learned, random, learning mode, persistence",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B31",
+  "title": "Audio: no recordings shipped; fallback is labelled \"not a recording\"; verified manifest entry plays with credit; unverified entry ignored; pause/resume/stop",
+  "status": "PASS",
+  "detail": "recording test uses a generated silent WAV served by the test only",
+  "evidence": []
+ },
+ {
+  "id": "B32",
+  "title": "Article-to-counter: Start links select the dhikr + target, back-to-guide link, custom target form, unsafe \"from\" ignored, step reset",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "B33",
+  "title": "Language pages: lang/dir, canonical, hreflang cluster, switcher links, translated UI, counting works",
+  "status": "PASS",
+  "detail": "checks structure and counting; translation accuracy needs a native-speaker review",
+  "evidence": []
+ },
+ {
+  "id": "B25",
+  "title": "Lab performance (mobile-emulated, 4x CPU throttle, median of 3): LCP<=2.5s, CLS<=0.1, tap-to-next-paint<=200ms",
+  "status": "PASS",
+  "detail": "/: LCP 400ms CLS 0.000 worst tap->paint 33ms TTFB 4ms | /subhanallah: LCP 188ms CLS 0.000 TTFB 4ms | /99-names-of-allah: LCP 276ms CLS 0.000 TTFB 5ms | local loopback server, headless Chromium; lab data only, NOT field/CrUX data; INP approximated by tap-to-next-paint",
+  "evidence": []
+ }
+]

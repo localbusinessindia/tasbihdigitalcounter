@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tasbihdigitalcounter.netlify.app/</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/what-is-tasbih</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/astaghfirullah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/subhanallah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/dhikr-after-salah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/tasbih-before-sleep</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/morning-evening-adhkar</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/99-names-of-allah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/islamic-dates</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/about</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/contact</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/privacy-policy</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/disclaimer</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/alhamdulillah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/allahu-akbar</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/la-ilaha-illallah</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://tasbihdigitalcounter.netlify.app/salawat-durood</loc><lastmod>2026-11-11</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://tasbihdigitalcounter.netlify.app/</loc><lastmod>2026-11-23</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/" /><xhtml:link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar" /><xhtml:link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur" /><xhtml:link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id" /><xhtml:link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr" /><xhtml:link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/" /></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/what-is-tasbih</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/astaghfirullah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/subhanallah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/dhikr-after-salah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/tasbih-before-sleep</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/morning-evening-adhkar</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/99-names-of-allah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/islamic-dates</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/about</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/contact</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/privacy-policy</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/disclaimer</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/alhamdulillah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/allahu-akbar</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/la-ilaha-illallah</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/salawat-durood</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/dhikr-list</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/guides</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/ar</loc><lastmod>2026-11-23</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/" /><xhtml:link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar" /><xhtml:link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur" /><xhtml:link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id" /><xhtml:link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr" /><xhtml:link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/" /></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/ur</loc><lastmod>2026-11-23</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/" /><xhtml:link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar" /><xhtml:link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur" /><xhtml:link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id" /><xhtml:link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr" /><xhtml:link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/" /></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/id</loc><lastmod>2026-11-23</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/" /><xhtml:link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar" /><xhtml:link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur" /><xhtml:link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id" /><xhtml:link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr" /><xhtml:link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/" /></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/tr</loc><lastmod>2026-11-23</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://tasbihdigitalcounter.netlify.app/" /><xhtml:link rel="alternate" hreflang="ar" href="https://tasbihdigitalcounter.netlify.app/ar" /><xhtml:link rel="alternate" hreflang="ur" href="https://tasbihdigitalcounter.netlify.app/ur" /><xhtml:link rel="alternate" hreflang="id" href="https://tasbihdigitalcounter.netlify.app/id" /><xhtml:link rel="alternate" hreflang="tr" href="https://tasbihdigitalcounter.netlify.app/tr" /><xhtml:link rel="alternate" hreflang="x-default" href="https://tasbihdigitalcounter.netlify.app/" /></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/digital-tasbih-beginner-guide</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/digital-vs-physical-tasbih</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/daily-dhikr-habit</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tasbihdigitalcounter.netlify.app/add-tasbih-to-home-screen</loc><lastmod>2026-11-23</lastmod></url>
 </urlset>

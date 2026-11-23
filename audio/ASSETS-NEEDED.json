@@ -1,0 +1,721 @@
+{
+ "summary": "132 recordings wanted, 0 supplied",
+ "items": [
+  {
+   "key": "sub",
+   "type": "dhikr",
+   "arabic": "سُبْحَانَ ٱللَّٰهِ",
+   "translit": "SubhanAllah",
+   "status": "missing"
+  },
+  {
+   "key": "alh",
+   "type": "dhikr",
+   "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+   "translit": "Alhamdulillah",
+   "status": "missing"
+  },
+  {
+   "key": "akb",
+   "type": "dhikr",
+   "arabic": "ٱللَّٰهُ أَكْبَرُ",
+   "translit": "Allahu Akbar",
+   "status": "missing"
+  },
+  {
+   "key": "lai",
+   "type": "dhikr",
+   "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+   "translit": "La ilaha illallah",
+   "status": "missing"
+  },
+  {
+   "key": "ast",
+   "type": "dhikr",
+   "arabic": "أَسْتَغْفِرُ ٱللَّٰهَ",
+   "translit": "Astaghfirullah",
+   "status": "missing"
+  },
+  {
+   "key": "hql",
+   "type": "dhikr",
+   "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ",
+   "translit": "La hawla wa la quwwata illa billah",
+   "status": "missing"
+  },
+  {
+   "key": "sbh",
+   "type": "dhikr",
+   "arabic": "سُبْحَانَ ٱللَّٰهِ وَبِحَمْدِهِ",
+   "translit": "SubhanAllahi wa bihamdihi",
+   "status": "missing"
+  },
+  {
+   "key": "sal",
+   "type": "dhikr",
+   "arabic": "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ",
+   "translit": "Allahumma salli ala Muhammad",
+   "status": "missing"
+  },
+  {
+   "key": "hsb",
+   "type": "dhikr",
+   "arabic": "حَسْبُنَا ٱللَّٰهُ وَنِعْمَ ٱلْوَكِيلُ",
+   "translit": "Hasbunallahu wa ni'mal wakeel",
+   "status": "missing"
+  },
+  {
+   "key": "bis",
+   "type": "dhikr",
+   "arabic": "بِسْمِ ٱللَّٰهِ",
+   "translit": "Bismillah",
+   "status": "missing"
+  },
+  {
+   "key": "saz",
+   "type": "dhikr",
+   "arabic": "سُبْحَانَ ٱللَّٰهِ ٱلْعَظِيمِ",
+   "translit": "SubhanAllahil Azeem",
+   "status": "missing"
+  },
+  {
+   "key": "sbz",
+   "type": "dhikr",
+   "arabic": "سُبْحَانَ ٱللَّٰهِ وَبِحَمْدِهِ سُبْحَانَ ٱللَّٰهِ ٱلْعَظِيمِ",
+   "translit": "SubhanAllahi wa bihamdihi, SubhanAllahil Azeem",
+   "status": "missing"
+  },
+  {
+   "key": "bsl",
+   "type": "dhikr",
+   "arabic": "سُبْحَانَ ٱللَّٰهِ وَٱلْحَمْدُ لِلَّٰهِ وَلَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَٱللَّٰهُ أَكْبَرُ",
+   "translit": "SubhanAllah wal-hamdulillah wa la ilaha illallah wallahu akbar",
+   "status": "missing"
+  },
+  {
+   "key": "tah",
+   "type": "dhikr",
+   "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+   "translit": "La ilaha illallahu wahdahu la sharika lah, lahul mulku wa lahul hamd, wa huwa ala kulli shay'in qadir",
+   "status": "missing"
+  },
+  {
+   "key": "kly",
+   "type": "dhikr",
+   "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ",
+   "translit": "La ilaha illallah Muhammadur rasulullah",
+   "status": "missing"
+  },
+  {
+   "key": "msh",
+   "type": "dhikr",
+   "arabic": "مَا شَاءَ ٱللَّٰهُ",
+   "translit": "Masha'Allah",
+   "status": "missing"
+  },
+  {
+   "key": "hmr",
+   "type": "dhikr",
+   "arabic": "ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِينَ",
+   "translit": "Alhamdulillahi Rabbil Alamin",
+   "status": "missing"
+  },
+  {
+   "key": "ata",
+   "type": "dhikr",
+   "arabic": "أَسْتَغْفِرُ ٱللَّٰهَ وَأَتُوبُ إِلَيْهِ",
+   "translit": "Astaghfirullaha wa atubu ilayh",
+   "status": "missing"
+  },
+  {
+   "key": "asz",
+   "type": "dhikr",
+   "arabic": "أَسْتَغْفِرُ ٱللَّٰهَ ٱلْعَظِيمَ ٱلَّذِي لَا إِلَٰهَ إِلَّا هُوَ ٱلْحَيَّ ٱلْقَيُّومَ وَأَتُوبُ إِلَيْهِ",
+   "translit": "Astaghfirullah al-Azeem alladhi la ilaha illa huwal Hayyul Qayyumu wa atubu ilayh",
+   "status": "missing"
+  },
+  {
+   "key": "rig",
+   "type": "dhikr",
+   "arabic": "رَبِّ ٱغْفِرْ لِي",
+   "translit": "Rabbi ighfir li",
+   "status": "missing"
+  },
+  {
+   "key": "afw",
+   "type": "dhikr",
+   "arabic": "ٱللَّٰهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ ٱلْعَفْوَ فَٱعْفُ عَنِّي",
+   "translit": "Allahumma innaka afuwwun tuhibbul afwa fa'fu anni",
+   "status": "missing"
+  },
+  {
+   "key": "sas",
+   "type": "dhikr",
+   "arabic": "ٱللَّٰهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ",
+   "translit": "Allahumma salli wa sallim ala nabiyyina Muhammad",
+   "status": "missing"
+  },
+  {
+   "key": "sws",
+   "type": "dhikr",
+   "arabic": "صَلَّى ٱللَّٰهُ عَلَيْهِ وَسَلَّمَ",
+   "translit": "Sallallahu alayhi wa sallam",
+   "status": "missing"
+  },
+  {
+   "key": "yun",
+   "type": "dhikr",
+   "arabic": "لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ ٱلظَّالِمِينَ",
+   "translit": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin",
+   "status": "missing"
+  },
+  {
+   "key": "hsy",
+   "type": "dhikr",
+   "arabic": "حَسْبِيَ ٱللَّٰهُ لَا إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+   "translit": "Hasbiyallahu la ilaha illa huwa alayhi tawakkaltu wa huwa Rabbul Arshil Azeem",
+   "status": "missing"
+  },
+  {
+   "key": "rhd",
+   "type": "dhikr",
+   "arabic": "رَبَّنَا آتِنَا فِي ٱلدُّنْيَا حَسَنَةً وَفِي ٱلْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
+   "translit": "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina adhaban-nar",
+   "status": "missing"
+  },
+  {
+   "key": "hay",
+   "type": "dhikr",
+   "arabic": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ",
+   "translit": "Ya Hayyu ya Qayyum, bi rahmatika astaghith",
+   "status": "missing"
+  },
+  {
+   "key": "slm",
+   "type": "dhikr",
+   "arabic": "ٱللَّٰهُمَّ أَنتَ ٱلسَّلَامُ وَمِنكَ ٱلسَّلَامُ تَبَارَكْتَ يَا ذَا ٱلْجَلَالِ وَٱلْإِكْرَامِ",
+   "translit": "Allahumma antas-salam wa minkas-salam, tabarakta ya dhal-jalali wal-ikram",
+   "status": "missing"
+  },
+  {
+   "key": "name-1",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-2",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-3",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-4",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-5",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-6",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-7",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-8",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-9",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-10",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-11",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-12",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-13",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-14",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-15",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-16",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-17",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-18",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-19",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-20",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-21",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-22",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-23",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-24",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-25",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-26",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-27",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-28",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-29",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-30",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-31",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-32",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-33",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-34",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-35",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-36",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-37",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-38",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-39",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-40",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-41",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-42",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-43",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-44",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-45",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-46",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-47",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-48",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-49",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-50",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-51",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-52",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-53",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-54",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-55",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-56",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-57",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-58",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-59",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-60",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-61",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-62",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-63",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-64",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-65",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-66",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-67",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-68",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-69",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-70",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-71",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-72",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-73",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-74",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-75",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-76",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-77",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-78",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-79",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-80",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-81",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-82",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-83",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-84",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-85",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-86",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-87",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-88",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-89",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-90",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-91",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-92",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-93",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-94",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-95",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-96",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-97",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-98",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "name-99",
+   "type": "name-of-allah",
+   "status": "missing"
+  },
+  {
+   "key": "ayat-al-kursi",
+   "type": "routine-item",
+   "status": "missing"
+  },
+  {
+   "key": "surah-ikhlas",
+   "type": "routine-item",
+   "status": "missing"
+  },
+  {
+   "key": "surah-falaq",
+   "type": "routine-item",
+   "status": "missing"
+  },
+  {
+   "key": "surah-nas",
+   "type": "routine-item",
+   "status": "missing"
+  },
+  {
+   "key": "sayyid-istighfar",
+   "type": "routine-item",
+   "status": "missing"
+  }
+ ]
+}

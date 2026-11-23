@@ -1,0 +1,9 @@
+# Version 2.6 changelog
+NEW: Audio system (`voice-guide.js`, `audio/`): plays verified recordings from `audio/manifest.json` with credit; otherwise device text-to-speech clearly labelled "not a recording". Play/Pause/Resume/Stop, slow/normal/fast, loading and error messages. No recordings included.
+NEW: Guided routine player (`routines.js`): after-salah 33-33-34, bedtime 34-33-33 and 33-33-34, morning and evening starter lists, custom routine creator (up to 10 routines, 20 steps), pause/resume, previous/next, remaining count, restore of unfinished routine, completion screen. Deep link: /?play=morning (also evening, after-salah, bedtime-34, bedtime-33).
+NEW: 99 Names study tools (`names.js`): search, favourites, learned tick-boxes, random name, learning mode, progress saved on device, print/save as PDF.
+NEW: Article-to-counter: every dhikr guide opens the counter with the right dhikr and target and shows a "Back to guide" link; Astaghfirullah and Salawat have a custom-target form (`start-counter.js`); 99 Names opens a no-target study session.
+NEW pages: /digital-tasbih-beginner-guide, /digital-vs-physical-tasbih, /daily-dhikr-habit, /add-tasbih-to-home-screen. Guides hub and dhikr list updated.
+IMPROVED: breadcrumbs (visible + JSON-LD) on all guides; extra original sections on Alhamdulillah, Allahu Akbar, La ilaha illallah, Salawat, Islamic dates, What is tasbih; language switcher at the top of the counter and language pages (and footer); Arabic/Urdu font stacks; import backup confirmation; storage-blocked warning; goal=0 deep links mean "no limit"; service worker cache v13 (ignores range requests for audio).
+FIXED: RTL pages no longer scroll sideways; audit tests B09, B23 and a placeholder false positive; HTML validator output parsing.
+TESTS: browser audit 33/33 pass (axe included), static audit 17/19 (S10a owner action, S16 blocked in sandbox). Not run: Lighthouse, real devices.

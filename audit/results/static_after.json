@@ -1,0 +1,168 @@
+[
+ {
+  "id": "S01",
+  "title": "Required site files present",
+  "status": "PASS",
+  "detail": "10 required files found",
+  "evidence": []
+ },
+ {
+  "id": "S02",
+  "title": "Title/description/canonical/OG/viewport/charset/lang on every indexable page",
+  "status": "PASS",
+  "detail": "27 pages checked",
+  "evidence": []
+ },
+ {
+  "id": "S03",
+  "title": "Single h1, no heading-level skips, no duplicate ids",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S04a",
+  "title": "Internal links and assets resolve to existing files",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S04b",
+  "title": "Internal links point directly at canonical URLs (no redirect hop)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S05",
+  "title": "No orphan pages (all reachable from homepage via internal links)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S06",
+  "title": "sitemap.xml valid, canonical, complete, no noindex/nonexistent URLs",
+  "status": "PASS",
+  "detail": "27 URLs",
+  "evidence": []
+ },
+ {
+  "id": "S07",
+  "title": "robots.txt allows pages and render resources and references the sitemap",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S08",
+  "title": "JSON-LD parses, required props present, URLs match canonical, no invented ratings",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S08b",
+  "title": "No FAQPage markup that cannot qualify for rich results / may not mirror visible text",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S09",
+  "title": "Images, icons, OG image and web manifest are valid and consistent",
+  "status": "PASS",
+  "detail": "site has no <img> elements; alt-text audit applies to icons/OG only",
+  "evidence": []
+ },
+ {
+  "id": "S10a",
+  "title": "No unresolved placeholder content",
+  "status": "PASS",
+  "detail": "placeholder scan across deployable source files",
+  "evidence": []
+ },
+ {
+  "id": "S10b",
+  "title": "No secrets / credentials in source (regex scan)",
+  "status": "PASS",
+  "detail": "pattern scan only; not proof of absence",
+  "evidence": []
+ },
+ {
+  "id": "S11",
+  "title": "Security/caching headers configured in _headers",
+  "status": "PASS",
+  "detail": "configuration inspection only; live headers are verified separately (BLOCKED if no deployment access)",
+  "evidence": []
+ },
+ {
+  "id": "S12",
+  "title": "Inline scripts and service worker parse (node --check)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S13",
+  "title": "No near-duplicate pages (8-word shingle Jaccard > 0.25)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S14",
+  "title": "Privacy policy matches implementation (host, analytics, ads, storage)",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S15",
+  "title": "HTML validation",
+  "status": "BLOCKED",
+  "detail": "vnu-jar not installed (run npm install in audit/)",
+  "evidence": []
+ },
+ {
+  "id": "S16",
+  "title": "External links reachable",
+  "status": "BLOCKED",
+  "detail": "sandbox egress allow-list does not include these hosts; list recorded for manual / CI check",
+  "evidence": [
+   "https://adssettings.google.com",
+   "https://policies.google.com/technologies/partner-sites",
+   "https://quran.com/33/56",
+   "https://sunnah.com/bukhari:3370",
+   "https://sunnah.com/bukhari:5362",
+   "https://sunnah.com/bukhari:6306",
+   "https://sunnah.com/bukhari:6307",
+   "https://sunnah.com/bukhari:6318",
+   "https://sunnah.com/bukhari:6405",
+   "https://sunnah.com/bukhari:6406",
+   "https://sunnah.com/muslim:2691",
+   "https://sunnah.com/muslim:2692",
+   "https://sunnah.com/muslim:2698",
+   "https://sunnah.com/muslim:2727a",
+   "https://sunnah.com/muslim:591",
+   "https://sunnah.com/muslim:596a",
+   "https://sunnah.com/muslim:597a",
+   "https://ummalquracalendar.org/umm-al-qura-calendar-2027/"
+  ]
+ },
+ {
+  "id": "S18",
+  "title": "v2.7 contact route and 99 Names PDF link are wired",
+  "status": "PASS",
+  "detail": "",
+  "evidence": []
+ },
+ {
+  "id": "S17",
+  "title": "Downloadable 99 Names PDF is valid and contains all 99 entries",
+  "status": "PASS",
+  "detail": "5 pages; 85647 bytes; 99/99 names found",
+  "evidence": []
+ }
+]
